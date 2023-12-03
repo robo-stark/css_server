@@ -1,0 +1,27 @@
+{
+  "mockId": "m2",
+  "mockType": "Chapter Wise Mocks",
+  "mockCount": 4,
+  "mockList": [
+    {
+      "testid": "m201",
+      "testCategory": "Algebra",
+      "testCount": 1
+    },
+    {
+      "testid": "m202",
+      "testCategory": "Profit & Loss",
+      "testCount": 0
+    },
+    {
+      "testid": "m203",
+      "testCategory": "Combination",
+      "testCount": 0
+    },
+    {
+      "testid": "m204",
+      "testCategory": "Permutation",
+      "testCount": 0
+    }
+  ]
+}
