@@ -4,22 +4,22 @@
   "mockCount": 4,
   "mockList": [
     {
-      "testid": "m201",
+      "testId": "m201",
       "testCategory": "Algebra",
       "testCount": 1
     },
     {
-      "testid": "m202",
+      "testId": "m202",
       "testCategory": "Profit & Loss",
       "testCount": 0
     },
     {
-      "testid": "m203",
+      "testId": "m203",
       "testCategory": "Combination",
       "testCount": 0
     },
     {
-      "testid": "m204",
+      "testId": "m204",
       "testCategory": "Permutation",
       "testCount": 0
     }
