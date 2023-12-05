@@ -17,7 +17,7 @@
           "option_b": "0",
           "option_c": "-1",
           "option_d": "abc",
-          "answer": "1",
+          "answer": 1,
           "solution": "Take any value of a, b, c such that<br>a + b + c = 0 where a ≠ b ≠ c<br>say a = 1 , b = -1 and c = 0<br>substituting these values in<br>$$/frac{a^2}{2a^2+bc}+/frac{b^2}{2b^2+ac}+/frac{c^2}{2c^+ab}$$ = 1/2 + 1/2 + 0 = 1",
           "questionType": "mcq"
         },
@@ -29,7 +29,7 @@
           "option_b": "m > 2",
           "option_c": "2 < m < 5",
           "option_d": "m < 5",
-          "answer": "2 < m < 5",
+          "answer": 3,
           "solution": "$$3m^2-21m+30<0 <br> m^2− 7m + 10 < 0 <br> m^2 - 5m − 2m + 10 < 0 <br> m(m − 5) − 2(m − 5) < 0 <br>$$ Case I : m − 2 > 0 and m − 5 < 0 <br> m > 2 and m < 5 or 2 < m < 5 <br> Case II : m − 2 < 0 and m − 5 > 0 <br> nothing common Hence, 2 < m < 5",
           "questionType": "mcq"
         },
@@ -41,7 +41,7 @@
           "option_b": "9",
           "option_c": "12",
           "option_d": "8",
-          "answer": "10",
+          "answer": 1,
           "solution": "5x+2y+z = 17 <br>Each of x,y,z is more than 1.<br>So, x = 2, y = 2, z = 3 is the only possibility<br>x+y+z = 7\\<br>And add to it the 3 one rupee stamps that were received at the end.<br>So, 7+3 = 10",
           "questionType": "mcq"
         },
@@ -53,7 +53,7 @@
           "option_b": "105",
           "option_c": "125",
           "option_d": "75",
-          "answer": "100",
+          "answer": 1,
           "solution": "\"$$\\frac{a^3+b^3}{a^2-ab+b^2} = \\frac{(a+b)(a^2+b^2-ab)}{a^2-ab+b^2} = a+b $$ <br>45 + 55 = 100 (on comparing with given question a = 55, b = 45)",
           "questionType": "mcq"
         },
@@ -65,7 +65,7 @@
           "option_b": "I < II",
           "option_c": "I = II",
           "option_d": "Nothing can be said",
-          "answer": "Nothing can be said",
+          "answer": 4,
           "solution": "Jackson and Joseph has been mentioned in the question, whereas Johnson is mentioned in statement 1<br>So, nothing can be said.",
           "questionType": "mcq"
         }
