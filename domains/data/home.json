@@ -1,6 +1,4 @@
-{
-  "total": 3,
-  "home": [
+[
     {
       "resourceId": "h1",
       "resourceName": "Learning Resources",
@@ -43,4 +41,3 @@
       ]
     }
   ]
-}
