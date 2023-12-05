@@ -2,6 +2,18 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
+const ResourceSchema = new Schema({
+	id : String,
+	type : String,
+	count : Number,
+	list : [{
+		id: String,
+     	category: String,
+        count: Number,
+        number:Number
+	}]
+});
+
 const TestSchema = new Schema({
 	testId : String,
 	testCategory : String,
@@ -27,32 +39,12 @@ const TestSchema = new Schema({
 	}]
 });
 
-const MockSchema = new Schema({
-	mockId : String,
-	mockType : String,
-	mockCount : Number,
-	mockList : [{
-		testId : String,
-		testCategory : String,
-		testCount : String,
-	}]
 
-});
 
 const HomeSchema = new Schema({
-	resourceId : {
-		type : String,
-		required : true,
-		unique : true
-	},
-	resourceName : {
-		type : String,
-		required : true
-	},
-	resourceCount : {
-		type : Number,
-		required : true
-	},
+	resourceId : String,
+	resourceName: String,
+	resourceCount: Number,
 	resourceCategory : [{
 		id : String,
 		name : String
@@ -60,7 +52,11 @@ const HomeSchema = new Schema({
 });
 
 const Home = mongoose.model("Home", HomeSchema);
-const Mock = mongoose.model("Mock", MockSchema);
-const Test = mongoose.model("Test", TestSchema);
+//const Test = mongoose.model("Test", TestSchema);
+const LR1 = mongoose.model("Lr1", ResourceSchema);
+const LR2 = mongoose.model("Lr2", ResourceSchema);
+const M2 = mongoose.model("M2", ResourceSchema);
+const M1 = mongoose.model("M1", ResourceSchema);
 
-export { Home, Mock, Test };
+
+export { Home, LR1, LR2, M1, M2 };
