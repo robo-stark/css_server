@@ -2,61 +2,62 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const ResourceSchema = new Schema({
+const questionSchema = new mongoose.Schema({
+      id: { type: String },
+      category: { type: String },
+      count: Number,
+      list: [{
+        number: Number,
+        name: { type: String },
+        link: { type: String },
+        type: { type: String },
+        time: Number,
+        questions: Number,
+        data: [{ 
+          questionNumber: Number,
+          questionId: { type: String },
+          question: { type: String },
+          option_a: { type: String },
+          option_b: { type: String },
+          option_c: { type: String },
+          option_d: { type: String },
+          answer: Number,
+          solution: { type: String },
+          questionType: { type: String }
+        }]
+     }]
+});
+
+const TempSchema = new Schema({
 	id : String,
-	type : String,
+	name : String,
+	data : [questionSchema]
+});
+
+const ResourceSchema = new Schema({
+	id : { type : String },
+	type : { type : String },
 	count : Number,
 	list : [{
-		id: String,
-     	category: String,
+		id: { type : String },
+     	category: { type : String },
         count: Number,
         number:Number
 	}]
 });
 
-const TestSchema = new Schema({
-	testId : String,
-	testCategory : String,
-	testCount : Number,
-	testList : [{
-		testNumber : Number,
-		testName : String,
-		testTime : Number,
-		testQuestions : Number,
-		testData : [{
-			questionId : String,
-			question : String,
-			option_a : String,
-			option_b : String,
-			option_c : String,
-			option_d : String,
-			solution : String,
-			questionType : String,
-			answer : Number,
-			questionNumber : Number
-		}]
-	
-	}]
-});
-
-
 
 const HomeSchema = new Schema({
 	resourceId : String,
 	resourceName: String,
-	resourceCount: Number,
-	resourceCategory : [{
-		id : String,
-		name : String
-	}] 
+	resourceData : [ResourceSchema]
 });
 
-const Home = mongoose.model("Home", HomeSchema);
-//const Test = mongoose.model("Test", TestSchema);
-const LR1 = mongoose.model("Lr1", ResourceSchema);
-const LR2 = mongoose.model("Lr2", ResourceSchema);
-const M2 = mongoose.model("M2", ResourceSchema);
-const M1 = mongoose.model("M1", ResourceSchema);
+const M2 = mongoose.model("M2", TempSchema);
+const M1 = mongoose.model("M1", TempSchema);
+const LR1 = mongoose.model("LR1", TempSchema);
+const LR2 = mongoose.model("LR2", TempSchema);
+const HomeModel = mongoose.model("Resource", HomeSchema);
 
 
-export { Home, LR1, LR2, M1, M2 };
+export { HomeModel, M1, M2, LR1, LR2};

@@ -34,7 +34,7 @@ const authenticateUser = async (data) => {
 
 const createNewUser = async (data) => {
 	try {
-		const { username, email, password } = data;
+		const { email, password } = data;
 
 		const existingUser = await User.findOne({ email });
 
@@ -44,7 +44,7 @@ const createNewUser = async (data) => {
 
 		const hashedPassword = await hashData(password);
 		const newUser = new User({
-			username, email, password : hashedPassword
+			email, password : hashedPassword
 		});
 
 		const createdUser = await newUser.save();

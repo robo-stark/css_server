@@ -4,11 +4,7 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
 
-	username : { 
-		type : String,
-		required : true,
-		unique : true
-	},
+
 	email : {
 		type : String,
 		required : true
@@ -19,3 +15,10 @@ const UserSchema = new Schema({
 });
 
 export default mongoose.model("User", UserSchema);
+
+
+	/*username : { 
+		type : String,
+		required : true,
+		unique : true
+	},*/

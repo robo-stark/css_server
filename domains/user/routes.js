@@ -38,22 +38,19 @@ userRoutes.post("/login", async (req, res) => {
 //Signup
 userRoutes.post("/signup", async (req, res) => {
 	try {
-		let { username, email, password } = req.body;
-		username = username.trim();
+		let { email, password } = req.body;
 		email = email.trim();
 		password = password.trim();
 
-		if (!(username && email && password)) {
+		if (!(email && password)) {
 			throw Error("Empty input fields!");
-		} else if ( !/^[a-zA-Z ]*$/.test(username) ) {
-			throw Error("Invalid name entered");
 		} else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
 			throw Error("Invalid email entered");
 		} else if (password.length < 6) {
 			throw Error("Password should be greater than 6 characters");
 		} else {
 			const newUser = await createNewUser({
-				username, email, password
+				email, password
 			});
 			res.status(200).json(newUser);
 		}
