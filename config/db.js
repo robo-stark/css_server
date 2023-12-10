@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config({path: './config/config.env' });
 
-import * as jso from '../domains/data/model.js'; 
+//import * as jso from '../domains/data/model.js'; 
 
-import testJson from "../json/l102.json" assert { type: "json" };
+//import testJson from "../json/l102.json" assert { type: "json" };
 
 const { MONGO_URI } = process.env;
 
