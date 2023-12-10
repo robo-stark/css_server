@@ -1,6 +1,6 @@
 import express from "express";
 const userRoutes = express.Router();
-import { createNewUser , authenticateUser } from './controller.js';
+import { createNewUser , authenticateUser, updateWatchedVideo } from './controller.js';
 import verifyToken from "../../middleware/auth.js";
 
 // protected route
@@ -12,6 +12,28 @@ userRoutes.get("/private_data", verifyToken, (req, res) => {
 userRoutes.get("/home", verifyToken, (req, res) => {
 	res.status(200).send("You are in the private territory");
 });*/
+
+
+//Login
+userRoutes.post("/watched", async (req, res) => {
+	try {
+
+		/*const id = "l1sm1"
+		const userId = "657521537a5e86254f7fba8d";*/
+
+		let { userId, videoId } = req.body;
+
+		if (!(videoId && userId)) {
+			throw Error("Something went wrong!");
+		}
+
+		const updateResult = await updateWatchedVideo({userId, videoId});
+		res.status(200).json(updateResult);
+
+	} catch (err) {
+		res.status(400).send(err.message);
+	}
+});
 
 
 //Login

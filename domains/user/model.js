@@ -10,7 +10,9 @@ const UserSchema = new Schema({
 		required : true
 	},
 	password : String,
-	token : String
+	token : String,
+	watchedVideos : [{ id : {type : String} }],
+	attemptedQuestions : [{ id : {type : String} }]
 
 });
 

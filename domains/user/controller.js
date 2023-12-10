@@ -56,4 +56,17 @@ const createNewUser = async (data) => {
 	}
 };
 
-export { createNewUser , authenticateUser };
+
+const updateWatchedVideo = async (data) => {
+	try{
+
+		const { userId, videoId } = data;
+		await User.updateOne({"_id" : userId}, { $push : {watchedVideos : {"id" : videoId}}});
+		return "success";
+
+	}catch(err) {
+		throw err;
+	}
+};
+
+export { createNewUser , authenticateUser, updateWatchedVideo };

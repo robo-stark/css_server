@@ -4,7 +4,7 @@ dotenv.config({path: './config/config.env' });
 
 import * as jso from '../domains/data/model.js'; 
 
-//import testJson from "../json/njson.json" assert { type: "json" };
+import testJson from "../json/l102.json" assert { type: "json" };
 
 const { MONGO_URI } = process.env;
 
@@ -96,7 +96,28 @@ const pullFromResource = async() => {
 
 const uploadData = async (data) => {
 	try {
-		await jso.HomeModel.create(data);
+		await jso.L1.create(data);
+	}catch(err){
+		throw err;
+	}
+}
+
+
+const uploadData2 = async (data) => {
+	try {
+
+		const jsonString = JSON.stringify(data);
+		var parsedString = jsonString.replace(/@\{(\w+)\}/g, function(match, group) {    
+    if (group === 'currentdate') {
+        return new Date();
+    } else if (group === 'foo') {
+        //return 'poo';
+    } //and so on
+});
+
+		const ndata = JSON.parse(parsedString)
+
+		await jso.P1.create(ndata);
 	}catch(err){
 		throw err;
 	}
@@ -105,6 +126,7 @@ const uploadData = async (data) => {
 
 await connectToDB();
 //await uploadData(testJson);
+//await uploadData2(testJson);
 //await pushToResource(dat);
 //await pullFromResource();
 //await updateOneLevelNested()
