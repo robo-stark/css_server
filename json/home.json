@@ -1,0 +1,177 @@
+[
+  {
+    "resourceId": "h1",
+    "resourceName": "Learning Resources",
+    "resourceData": [
+      {
+        "id": "l1",
+        "name": "Quants",
+        "list": [
+          {
+            "id": "l101",
+            "category": "Arithmetic",
+            "sno": 1
+          },
+          {
+            "id": "l102",
+            "category": "Algebra & Modern Math",
+            "sno": 2
+          },
+          {
+            "id": "l103",
+            "category": "Number System",
+            "sno": 3
+          },
+          {
+            "id": "l104",
+            "category": "Geometry",
+            "sno": 4
+          }
+        ]
+      },
+      {
+        "id": "l2",
+        "name": "LRDI",
+        "list": [
+          {
+            "id": "l201",
+            "category": "Logical Reasoning",
+            "sno": 1
+          },
+          {
+            "id": "l202",
+            "category": "Data Interpretation",
+            "sno": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceId": "h2",
+    "resourceName": "Practice",
+    "resourceData": [
+      {
+        "id": "p1",
+        "name": "Quants",
+        "list": [
+          {
+            "id": "p101",
+            "category": "Arithmetic",
+            "sno": 1
+          },
+          {
+            "id": "p102",
+            "category": "Algebra",
+            "sno": 2
+          },
+          {
+            "id": "p103",
+            "category": "Number System",
+            "sno": 3
+          },
+          {
+            "id": "p104",
+            "category": "Geometry",
+            "sno": 4
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "name": "LRDI",
+        "list": [
+          {
+            "id": "p201",
+            "category": "Logical Reasoning",
+            "sno": 1
+          },
+          {
+            "id": "p202",
+            "category": "Data Interpretation",
+            "sno": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceId": "h3",
+    "resourceName": "Full Mocks",
+    "resourceData": [
+      {
+        "id": "m1",
+        "name": "Previous Year Mocks",
+        "list": [
+          {
+            "id": "m101",
+            "category": "Cat 2023",
+            "sno": 1
+          },
+          {
+            "id": "m102",
+            "category": "Cat 2022",
+            "sno": 2
+          },
+          {
+            "id": "m103",
+            "category": "Cat 2021",
+            "sno": 3
+          },
+          {
+            "id": "m104",
+            "category": "Cat 2020",
+            "sno": 4
+          },
+          {
+            "id": "m105",
+            "category": "Cat 2019",
+            "sno": 5
+          },
+          {
+            "id": "m106",
+            "category": "Cat 2018",
+            "sno": 6
+          },
+          {
+            "id": "m107",
+            "category": "Cat 2017",
+            "sno": 7
+          },
+          {
+            "id": "m108",
+            "category": "Cat 2016",
+            "sno": 8
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "name": "Complete Mocks",
+        "list": [
+          {
+            "id": "m201",
+            "category": "Mock Tests",
+            "sno": 1
+          }
+        ]
+      },
+      {
+        "id": "m3",
+        "name": "Sectional Mocks",
+        "list": [
+          {
+            "id": "m301",
+            "category": "Quants",
+            "sno": 1
+          },
+          {
+            "id": "m302",
+            "category": "LRDI",
+            "sno": 2
+          }
+        ]
+      }
+    ]
+  }
+]
