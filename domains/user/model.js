@@ -11,8 +11,8 @@ const UserSchema = new Schema({
 	},
 	password : String,
 	token : String,
-	watchedVideos : [{ id : {type : String} }],
-	attemptedQuestions : [{ id : {type : String} }]
+	watchedVideos : [{ _id : {type : String} }],
+	attemptedQuestions : [{ _id : {type : String} }]
 
 });
 

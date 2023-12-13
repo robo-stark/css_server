@@ -1,0 +1,78 @@
+{
+  "id": "l102",
+  "category": "Algebra & Modern Math",
+  "data": [
+    {
+      "id": "l10201",
+      "category": "Simple Equations",
+      "teacher": "Ravi Prakash Sir",
+      "sno": 1,
+      "count": 6,
+      "list": [
+        {
+          "id": "l1se1",
+          "sno": 1,
+          "name": "Simple Equations 1",
+          "link": "https://www.youtube.com/watch?v=W6MKuAnB0h4"
+        },
+        {
+          "id": "l1se2",
+          "sno": 2,
+          "name": "Simple Equations 2",
+          "link": "https://www.youtube.com/watch?v=P-emknCdeZE"
+        },
+        {
+          "id": "l1se3",
+          "sno": 3,
+          "name": "Simple Equations 3",
+          "link": "https://www.youtube.com/watch?v=vrtKzaspVjs"
+        },
+        {
+          "id": "l1se4",
+          "sno": 4,
+          "name": "Simple Equations 4",
+          "link": "https://www.youtube.com/watch?v=hlEjsEVLkbg"
+        },
+        {
+          "id": "l1se5",
+          "sno": 5,
+          "name": "Simple Equations 5",
+          "link": "https://www.youtube.com/watch?v=9foBHml4Ls0"
+        },
+        {
+          "id": "l1se6",
+          "sno": 6,
+          "name": "Simple Equations 6",
+          "link": "https://www.youtube.com/watch?v=UkhgxUqT9qE"
+        }
+      ]
+    },
+    {
+      "id": "l10202",
+      "category": "Quadratic Equations",
+      "teacher": "Ravi Prakash Sir",
+      "sno": 2,
+      "count": 3,
+      "list": [
+        {
+          "id": "l1q1",
+          "sno": 1,
+          "name": "Quadratic Equations 1",
+          "link": "https://www.youtube.com/watch?v=rk64bqehuto"
+        },
+        {
+          "id": "l1q2",
+          "sno": 2,
+          "name": "Quadratic Equations 2",
+          "link": "https://www.youtube.com/watch?v=X3c60CCB18U"
+        },
+        {
+          "id": "l1q3",
+          "sno": 3,
+          "name": "Quadratic Equations 3",
+          "link": "https://www.youtube.com/watch?v=27OVCl0b0nQ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "p102",
+  "category": "Algebra",
+  "data": [
+    {
+      "id": "p10201",
+      "category": "Polynomials-I",
+      "createdAt": "@{currentdate}",
+      "isLocked": false,
+      "attempted": false,
+      "sno": 1,
+      "questions": 5,
+      "time": 15,
+      "questionData": [
+        {
+          "questionNumber": 1,
+          "questionId": "q001",
+          "question": "If a + b + c = 0, where a ≠ b ≠ c, then, $$\\frac{a^2}{2a^2+bc}+\\frac{b^2}{2b^2+ac}+\\frac{c^2}{2c^+ab}$$ is equal to ?",
+          "option_a": "1",
+          "option_b": "0",
+          "option_c": "-1",
+          "option_d": "abc",
+          "answer": 1,
+          "solution": "Take any value of a, b, c such that<br>a + b + c = 0 where a ≠ b ≠ c<br>say a = 1 , b = -1 and c = 0<br>substituting these values in<br>$$/frac{a^2}{2a^2+bc}+/frac{b^2}{2b^2+ac}+/frac{c^2}{2c^+ab}$$ = 1/2 + 1/2 + 0 = 1",
+          "questionType": "mcq"
+        },
+        {
+          "questionNumber": 2,
+          "questionId": "q002",
+          "question": "What is the value of m which satisfies $$3m^2-21m+30<0$$ ?",
+          "option_a": "m < 2 or m > 5",
+          "option_b": "m > 2",
+          "option_c": "2 < m < 5",
+          "option_d": "m < 5",
+          "answer": 3,
+          "solution": "$$3m^2-21m+30<0 <br> m^2− 7m + 10 < 0 <br> m^2 - 5m − 2m + 10 < 0 <br> m(m − 5) − 2(m − 5) < 0 <br>$$ Case I : m − 2 > 0 and m − 5 < 0 <br> m > 2 and m < 5 or 2 < m < 5 <br> Case II : m − 2 < 0 and m − 5 > 0 <br> nothing common Hence, 2 < m < 5",
+          "questionType": "mcq"
+        },
+        {
+          "questionNumber": 3,
+          "questionId": "q003",
+          "question": "Once I had been to the post-office to buy stamps of five rupees, two rupees and one rupee. I paid the clerk Rs 20, and since he did not have change, he gave me three more stamps of one rupee. If the number of stamps of each type that I had ordered initially was more than one, what was the total number of stamps that I bought?",
+          "option_a": "10",
+          "option_b": "9",
+          "option_c": "12",
+          "option_d": "8",
+          "answer": 1,
+          "solution": "5x+2y+z = 17 <br>Each of x,y,z is more than 1.<br>So, x = 2, y = 2, z = 3 is the only possibility<br>x+y+z = 7\\<br>And add to it the 3 one rupee stamps that were received at the end.<br>So, 7+3 = 10",
+          "questionType": "mcq"
+        },
+        {
+          "questionNumber": 4,
+          "questionId": "q004",
+          "question": "The value of $$\\frac{55^3 + 45^3}{55^2-55*45 + 45^2}$$ is ?",
+          "option_a": "100",
+          "option_b": "105",
+          "option_c": "125",
+          "option_d": "75",
+          "answer": 1,
+          "solution": "$$\\frac{a^3+b^3}{a^2-ab+b^2} = \\frac{(a+b)(a^2+b^2-ab)}{a^2-ab+b^2} = a+b $$ <br>= 45 + 55 = 100 (on comparing with given question a = 55, b = 45)",
+          "questionType": "mcq"
+        },
+        {
+          "questionNumber": 5,
+          "questionId": "q005",
+          "question": "Nineteen years from now Jackson will be 3 times as old as Joseph is now. Joseph is three years younger than Jackson.<br> I.Johnson’s age now<br>II. Joseph’s age now",
+          "option_a": "I > II",
+          "option_b": "I < II",
+          "option_c": "I = II",
+          "option_d": "Nothing can be said",
+          "answer": 4,
+          "solution": "Jackson and Joseph has been mentioned in the question, whereas Johnson is mentioned in statement 1<br>So, nothing can be said.",
+          "questionType": "mcq"
+        }
+      ]
+    }
+  ]
+}

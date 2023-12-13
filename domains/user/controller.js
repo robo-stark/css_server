@@ -25,9 +25,14 @@ const authenticateUser = async (data) => {
 		const tokenData = { userId : fetchedUser._id, email};
 		const token = await createToken(tokenData);
 		fetchedUser.token = token;
-		return fetchedUser;
+		const res = {
+			  "status": "success",
+			  "data": fetchedUser,
+			  "message": "Login Success"
+			}
+		return res;
 	}catch(err) {
-		throw err;
+		throw Error(err);
 	}
 
 };
@@ -39,7 +44,7 @@ const createNewUser = async (data) => {
 		const existingUser = await User.findOne({ email });
 
 		if (existingUser) {
-			throw Error ("User with this email already exists");
+			throw Error("User with this email already exists");
 		}
 
 		const hashedPassword = await hashData(password);
@@ -47,12 +52,16 @@ const createNewUser = async (data) => {
 			email, password : hashedPassword
 		});
 
-		const createdUser = await newUser.save();
-		
-		return createdUser;
+		await newUser.save();
+		 
+		return {
+			  "status": "success",
+			  "data": null,
+			  "message": "Account Created"
+			};
 
 	}catch(err) {
-		throw err;
+		throw Error(err);
 	}
 };
 
@@ -60,12 +69,20 @@ const createNewUser = async (data) => {
 const updateWatchedVideo = async (data) => {
 	try{
 
-		const { userId, videoId } = data;
-		await User.updateOne({"_id" : userId}, { $push : {watchedVideos : {"id" : videoId}}});
-		return "success";
+		const { userId, subId } = data;
+		await User.updateOne(
+				{"_id" : userId}, 
+				{ $addToSet : { watchedVideos : {_id : subId} } } 
+		);
+
+		return {
+			 "status": "success",
+			  "data": null,
+			  "message": "Video Added to user data"
+			}
 
 	}catch(err) {
-		throw err;
+		throw Error(err);
 	}
 };
 
