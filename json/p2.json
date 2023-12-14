@@ -1,0 +1,16 @@
+{
+  "id": "p2",
+  "name": "LRDI",
+  "list": [
+    {
+      "id": "p201",
+      "category": "Logical Reasoning",
+      "sno": 1
+    },
+    {
+      "id": "p202",
+      "category": "Data Interpretation",
+      "sno": 2
+    }
+  ]
+}

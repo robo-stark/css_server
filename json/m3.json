@@ -1,0 +1,16 @@
+{
+  "id": "m3",
+  "name": "Sectional Mocks",
+  "list": [
+    {
+      "id": "m301",
+      "category": "Quants",
+      "sno": 1
+    },
+    {
+      "id": "m302",
+      "category": "LRDI",
+      "sno": 2
+    }
+  ]
+}

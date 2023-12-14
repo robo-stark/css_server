@@ -1,0 +1,26 @@
+{
+  "id": "p1",
+  "name": "Quants",
+  "list": [
+    {
+      "id": "p101",
+      "category": "Arithmetic",
+      "sno": 1
+    },
+    {
+      "id": "p102",
+      "category": "Algebra",
+      "sno": 2
+    },
+    {
+      "id": "p103",
+      "category": "Number System",
+      "sno": 3
+    },
+    {
+      "id": "p104",
+      "category": "Geometry",
+      "sno": 4
+    }
+  ]
+}

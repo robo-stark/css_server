@@ -1,0 +1,26 @@
+{
+  "id": "l1",
+  "name": "Quants",
+  "list": [
+    {
+      "id": "l101",
+      "category": "Arithmetic",
+      "sno": 1
+    },
+    {
+      "id": "l102",
+      "category": "Algebra & Modern Math",
+      "sno": 2
+    },
+    {
+      "id": "l103",
+      "category": "Number System",
+      "sno": 3
+    },
+    {
+      "id": "l104",
+      "category": "Geometry",
+      "sno": 4
+    }
+  ]
+}

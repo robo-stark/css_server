@@ -1,5 +1,5 @@
 import express, { json } from "express";
-import { getHomeData, getLearningResource } from './controller.js';
+import { getHomeData, getLearningResource, getCategory } from './controller.js';
 
 const dataRoutes = express.Router();
 
@@ -10,10 +10,32 @@ dataRoutes.get("/", async (req, res) => {
 		let jsonData = await getHomeData(); 
 		res.status(200).json(jsonData); 
 	}catch(err) {
-		res.status(400).send({
+		res.status(200).send({
 			  "status": "failed",
 			  "data": null,
-			  "message": err.message
+			  "message": "server error"
+		});
+	}
+});
+
+
+dataRoutes.get("/:id", async (req, res) => {
+	try {
+
+		const catId = req.params.id;
+		
+		if (!catId) {
+			throw Error("Empty fields received!");
+		}
+
+		const jsonData = await getCategory(catId);
+		res.status(200).json(jsonData); 
+
+	}catch(err) {
+		res.status(200).send({
+			  "status": "failed",
+			  "data": null,
+			  "message": "server error"
 		});
 	}
 });
@@ -32,10 +54,10 @@ dataRoutes.get("/lr/:id", async (req, res) => {
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
-		res.status(400).send({
+		res.status(200).send({
 			  "status": "failed",
 			  "data": null,
-			  "message": err.message // => change it to could not find document
+			  "message": "server error"
 		});
 	}
 });

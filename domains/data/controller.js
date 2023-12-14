@@ -7,13 +7,12 @@ const getHomeData = async() =>{
 		return {
 			  "status": "success",
 			  "data": m.default,
-			  "message": "Login Success"
+			  "message": "Data Received"
 			}
 	}catch(err){
 		throw Error(err);
 	}
 }
-
 
 const getLearningResource = async(subId) => {
 	try{
@@ -25,7 +24,26 @@ const getLearningResource = async(subId) => {
 		return {
 			  "status": "success",
 			  "data": m.default,
-			  "message": "Login Success"
+			  "message": "Data Received"
+			}
+
+	}catch(err){
+		throw Error(err);
+	}
+}
+
+
+const getCategory = async(catId) => {
+	try{
+
+		const m = await import('../../json/' + catId+".json", {
+			assert: { type: 'json' }
+		});
+		
+		return {
+			  "status": "success",
+			  "data": m.default,
+			  "message": "Data Received"
 			}
 
 	}catch(err){
@@ -33,6 +51,6 @@ const getLearningResource = async(subId) => {
 	}
 }
 	
-export { getHomeData, getLearningResource};
+export { getHomeData, getLearningResource, getCategory};
 
 

@@ -1,0 +1,46 @@
+{
+  "id": "m1",
+  "name": "Previous Year Mocks",
+  "list": [
+    {
+      "id": "m101",
+      "category": "Cat 2023",
+      "sno": 1
+    },
+    {
+      "id": "m102",
+      "category": "Cat 2022",
+      "sno": 2
+    },
+    {
+      "id": "m103",
+      "category": "Cat 2021",
+      "sno": 3
+    },
+    {
+      "id": "m104",
+      "category": "Cat 2020",
+      "sno": 4
+    },
+    {
+      "id": "m105",
+      "category": "Cat 2019",
+      "sno": 5
+    },
+    {
+      "id": "m106",
+      "category": "Cat 2018",
+      "sno": 6
+    },
+    {
+      "id": "m107",
+      "category": "Cat 2017",
+      "sno": 7
+    },
+    {
+      "id": "m108",
+      "category": "Cat 2016",
+      "sno": 8
+    }
+  ]
+}
