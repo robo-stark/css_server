@@ -4,11 +4,13 @@
   "list": [
     {
       "id": "m301",
+      "type" : "mr",
       "category": "Quants",
       "sno": 1
     },
     {
       "id": "m302",
+      "type" : "mr",
       "category": "LRDI",
       "sno": 2
     }

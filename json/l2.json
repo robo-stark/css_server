@@ -4,11 +4,13 @@
   "list": [
     {
       "id": "l201",
+      "type" : "lr",
       "category": "Logical Reasoning",
       "sno": 1
     },
     {
       "id": "l202",
+      "type" : "lr",
       "category": "Data Interpretation",
       "sno": 2
     }

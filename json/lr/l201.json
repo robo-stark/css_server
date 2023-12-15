@@ -3,76 +3,20 @@
   "category": "Logical Reasoning",
   "data": [
     {
-      "id": "l20101",
+      "id": "l2lc",
       "category": "Linear & Circular Arrangement",
       "teacher": "Ravi Prakash Sir",
+      "link" : "https://youtu.be/4tI-h-GKWVk?si=Bwz7dgfExbnvY4mu",
       "sno": 1,
-      "count": 5,
-      "list": [
-        {
-          "id": "l2lc1",
-          "sno": 1,
-          "name": "Linear & Circular Arrangement 1",
-          "link": "https://www.youtube.com/watch?v=4tI-h-GKWVk"
-        },
-        {
-          "id": "l2lc2",
-          "sno": 2,
-          "name": "Linear & Circular Arrangement 2",
-          "link": "https://www.youtube.com/watch?v=htsJtjvaoXE"
-        },
-        {
-          "id": "l2lc3",
-          "sno": 3,
-          "name": "Linear & Circular Arrangement 3",
-          "link": "https://www.youtube.com/watch?v=spET6FqiBZ8"
-        },
-        {
-          "id": "l2lc4",
-          "sno": 4,
-          "name": "Linear & Circular Arrangement 4",
-          "link": "https://www.youtube.com/watch?v=nP3Lgm4Q66k"
-        },
-        {
-          "id": "l2lc5",
-          "sno": 5,
-          "name": "Linear & Circular Arrangement",
-          "link": "https://www.youtube.com/watch?v=e513BAOTyU8"
-        }
-      ]
+      "count": 5
     },
     {
-      "id": "l20102",
+      "id": "l2cu",
       "category": "Cubes",
       "teacher": "Ravi Prakash Sir",
       "sno": 2,
-      "count": 4,
-      "list": [
-       {
-          "id": "l2c1",
-          "sno": 1,
-          "name": "Cubes 1",
-          "link": "https://www.youtube.com/watch?v=0TdF_yyNkZk"
-        },
-        {
-          "id": "l2c2",
-          "sno": 2,
-          "name": "Cubes 2",
-          "link": "https://www.youtube.com/watch?v=SXGVyDsuHds"
-        },
-        {
-          "id": "l2c3",
-          "sno": 3,
-          "name": "Cubes 3",
-          "link": "https://www.youtube.com/watch?v=-a9xMpOq7ns"
-        },
-        {
-          "id": "l2c4",
-          "sno": 4,
-          "name": "Cubes 4",
-          "link": "https://www.youtube.com/watch?v=JNAyzPhHrRE"
-        }
-      ]
+      "link" : "https://youtu.be/0TdF_yyNkZk?si=ZUUJ5TjMoPEaIC-s",
+      "count": 4
     }
   ]
 }

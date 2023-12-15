@@ -4,21 +4,25 @@
   "list": [
     {
       "id": "m101",
+      "type" : "mr",
       "category": "Cat 2023",
       "sno": 1
     },
     {
       "id": "m102",
+      "type" : "mr",
       "category": "Cat 2022",
       "sno": 2
     },
     {
       "id": "m103",
+      "type" : "mr",
       "category": "Cat 2021",
       "sno": 3
     },
     {
       "id": "m104",
+      "type" : "mr",
       "category": "Cat 2020",
       "sno": 4
     },
@@ -29,16 +33,19 @@
     },
     {
       "id": "m106",
+      "type" : "mr",
       "category": "Cat 2018",
       "sno": 6
     },
     {
       "id": "m107",
+      "type" : "mr",
       "category": "Cat 2017",
       "sno": 7
     },
     {
       "id": "m108",
+      "type" : "mr",
       "category": "Cat 2016",
       "sno": 8
     }

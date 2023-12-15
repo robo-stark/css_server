@@ -4,6 +4,7 @@
   "list": [
     {
       "id": "m201",
+      "type" : "mr",
       "category": "Mock Tests",
       "sno": 1
     }

@@ -4,21 +4,25 @@
   "list": [
     {
       "id": "l101",
+      "type" : "lr",
       "category": "Arithmetic",
       "sno": 1
     },
     {
       "id": "l102",
+      "type" : "lr",
       "category": "Algebra & Modern Math",
       "sno": 2
     },
     {
       "id": "l103",
+      "type" : "lr",
       "category": "Number System",
       "sno": 3
     },
     {
       "id": "l104",
+      "type" : "lr",
       "category": "Geometry",
       "sno": 4
     }
