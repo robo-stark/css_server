@@ -1,0 +1,27 @@
+{
+  "id": "p101",
+  "category": "Arithmetic",
+  "data": [
+    {
+      "id": "p1rp",
+      "type" : "arithmetic",
+      "category": "Ratio and Proportions",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "p1dp",
+      "type" : "arithmetic",
+      "category": "Direct/Inverse Proportions",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "p1av",
+      "type" : "arithmetic",
+      "category": "Average",
+      "sno": 3,
+      "count": 0
+    }
+  ]
+}

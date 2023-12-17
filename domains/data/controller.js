@@ -1,3 +1,4 @@
+import User from '../user/model.js'; 
 
 const getHomeData = async() =>{
 	try{
@@ -14,16 +15,52 @@ const getHomeData = async() =>{
 	}
 }
 
-const getLearningResource = async(subId) => {
+const getResource = async(data) => {
 	try{
 
-		const m = await import('../../json/lr/' + subId+".json", {
+		const {type, subId} = data;
+
+		const m = await import('../../json/'+type+'/'+subId+".json", {
 			assert: { type: 'json' }
 		});
 		
 		return {
 			  "status": "success",
 			  "data": m.default,
+			  "message": "Data Received"
+			}
+
+	}catch(err){
+		throw Error(err);
+	}
+}
+
+
+const getPracticeQuestion = async(data) => {
+	try{
+
+		const {userId, type, subId} = data;
+
+		let m = await import('../../json/pr/'+type+'/'+subId+".json", {
+			assert: { type: 'json' }
+		});
+		m = m.default;
+
+		const user = await User.findOne({_id : userId});
+		const userData = user.attemptedQuestions.find((ele) => ele._id === subId );
+		const queList = userData.list
+		queList.forEach((ele) => {
+			for (var i = 0; i < m.data.length; i++){
+				if (m.data[i].questionId === ele._id) {
+					m.data[i].attempted = true;
+					break;
+				}
+			}
+		})
+
+		return {
+			  "status": "success",
+			  "data": m,
 			  "message": "Data Received"
 			}
 
@@ -51,6 +88,6 @@ const getCategory = async(catId) => {
 	}
 }
 	
-export { getHomeData, getLearningResource, getCategory};
+export { getHomeData, getResource, getCategory, getPracticeQuestion };
 
 

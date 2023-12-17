@@ -5,8 +5,14 @@
     {
       "id": "m201",
       "type" : "mr",
-      "category": "Mock Tests",
+      "category": "Mock-I",
       "sno": 1
+    },
+    {
+      "id": "m202",
+      "type" : "mr",
+      "category": "Mock-II",
+      "sno": 2
     }
   ]
 }

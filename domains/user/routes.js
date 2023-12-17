@@ -1,20 +1,20 @@
 import express from "express";
 const userRoutes = express.Router();
-import { createNewUser , authenticateUser, updateWatchedVideo } from './controller.js';
+import { createNewUser , authenticateUser, updatePraticeData } from './controller.js';
 import verifyToken from "../../middleware/auth.js";
 
 
 //Update Watched Data
-userRoutes.post("/watched", verifyToken, async (req, res) => {
+userRoutes.post("/update", async (req, res) => {
 	try {
 
-		let { userId, subId } = req.body;
+		let { userId, type, subId } = req.body;
 	
-		if (!(videoId && subId)) {
+		if (!(userId && subId && type)) {
 			throw Error("Empty fields received!");
 		}
 
-		const updateResult = await updateWatchedVideo({userId, subId});
+		const updateResult = await updatePraticeData({userId, type, subId});
 		res.status(200).json(updateResult);
 
 	} catch (err) {

@@ -5,13 +5,15 @@
     {
       "id": "m301",
       "type" : "mr",
-      "category": "Quants",
+      "filter" : "Quants",
+      "category": "Algebra",
       "sno": 1
     },
     {
       "id": "m302",
       "type" : "mr",
-      "category": "LRDI",
+      "filter" : "LRDI",
+      "category": "LRDI-I",
       "sno": 2
     }
   ]

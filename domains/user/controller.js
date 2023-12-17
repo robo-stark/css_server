@@ -66,19 +66,32 @@ const createNewUser = async (data) => {
 };
 
 
-const updateWatchedVideo = async (data) => {
+const updatePraticeData = async (data) => {
 	try{
 
-		const { userId, subId } = data;
-		await User.updateOne(
-				{"_id" : userId}, 
-				{ $addToSet : { watchedVideos : {_id : subId} } } 
-		);
+		const { userId, type, subId } = data;
 
+		const exists = await User.countDocuments({_id : userId,"attemptedQuestions._id" : type})
+		if (exists) {
+			await User.updateOne({_id : userId}, 
+				{ $addToSet : { "attemptedQuestions.$[e1].list" : {_id : subId } } },
+				{arrayFilters : [{"e1._id" : type}]} )
+		}else{
+			await User.updateOne(
+				{ _id : userId },
+				{ $addToSet : {
+					"attemptedQuestions" : [{
+						_id : type,
+						list : { _id : subId }
+					}]
+				} },
+			)
+		}
+		
 		return {
 			 "status": "success",
 			  "data": null,
-			  "message": "Video Added to user data"
+			  "message": "Video Addinf...."
 			}
 
 	}catch(err) {
@@ -86,4 +99,4 @@ const updateWatchedVideo = async (data) => {
 	}
 };
 
-export { createNewUser , authenticateUser, updateWatchedVideo };
+export { createNewUser , authenticateUser, updatePraticeData };
