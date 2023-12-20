@@ -19,6 +19,7 @@
           "option_d": "East was considered by some civilisations to be a more positive direction",
           "answer": 2,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -32,6 +33,7 @@
           "option_d": "It explores some myths about maps.",
           "answer": 2,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -45,6 +47,7 @@
           "option_d": "navigated with the help of early maps.",
           "answer": 3,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -58,6 +61,7 @@
           "option_d": "north was considered the most desirable direction.",
           "answer": 2,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -71,6 +75,7 @@
           "option_d": "early Christian maps",
           "answer": 1,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -84,6 +89,7 @@
           "option_d": "The biggest contributory factor is not stated in the passage",
           "answer": 4,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -97,6 +103,7 @@
           "option_d": "are usually eroded by expenditure incurred by the host city.",
           "answer": 3,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -110,6 +117,7 @@
           "option_d": "they become outdated having being built with little planning and under time pressure",
           "answer": 1,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -123,6 +131,7 @@
           "option_d": "the influx of visitors during the Games places a huge strain on the urban infrastructure.",
           "answer": 4,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         }
       ]
@@ -144,6 +153,7 @@
           "option_d": "8",
           "answer": 4,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -157,6 +167,7 @@
           "option_d": "A",
           "answer": 1,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -170,6 +181,7 @@
           "option_d": "1,2,8,12",
           "answer": 1,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -183,6 +195,7 @@
           "option_d": "All candies are kept before biscuits.",
           "answer": 3,
           "solution": "",
+          "user_answer" : -1,
           "questionType": "mcq"
         }
       ]
@@ -203,6 +216,7 @@
           "option_c": "-1",
           "option_d": "abc",
           "answer": 2,
+          "user_answer" : -1,
           "solution": "Take any value of a, b, c such that<br>a + b + c = 0 where a ≠ b ≠ c<br>say a = 1 , b = -1 and c = 0<br>substituting these values in<br>$\\frac{a^2}{2a^2+bc}+\\frac{b^2}{2b^2+ac}+\\frac{c^2}{2c^+ab} = 1/2 + 1/2 + 0 = 1$",
           "questionType": "mcq"
         },
@@ -216,6 +230,7 @@
           "option_c": "4",
           "option_d": "1/4",
           "answer": 1,
+          "user_answer" : -1,
           "solution": "$x^2+px+12=0$<br>x = 4 is the one root of the equation,<br>therefore x = 4 will satisfy this equation<br>∴ 16 + 4p + 12 = 0<br>⇒ p = −7<br>Other quadratic equation becomes $x^2−7x + q = 0$ (By putting value of p)<br>Its roots are equal, so, $b^2= 4ac$<br>49 = 4q or q = 49",
           "questionType": "mcq"
         },
@@ -230,6 +245,7 @@
           "option_d": "8",
           "answer": 1,
           "solution": "5x+2y+z = 17<br>Each of x,y,z is more than 1.<br>So, x = 2, y = 2, z = 3 is the only possibility<br>x+y+z = 7<br>And add to it the 3 one rupee stamps that were received at the end.<br>So, 7+3 = 10",
+          "user_answer" : -1,
           "questionType": "mcq"
         },
         {
@@ -242,6 +258,7 @@
           "option_c": "3",
           "option_d": "None of these",
           "answer": 4,
+          "user_answer" : -1,
           "solution": "Let the roots be m and n.<br>The given quadratic equation can be written as $ax^2+bx+c=0$<br>where $a = 1 , b = −(A − 3), c = −(A − 7)$.<br>The sum of the roots is $( m + n ) = −( \\frac ba ) = A − 3$<br>and the product of the roots is $(m\\times n) = ( \\frac ca ) = −( A − 7 )$<br>The sum of the squares of the roots = $m^2+n^2$<br>$= (m+n)^2-2mn = (A-3)^2-2\\times(-1)\\times(A-7) = 0$ <br>On solving, we get,<br> $A^2 – 4A – 5 = 0$ <br> $A(A – 5) + 1(A – 5) = 0$<br>$(A + 1) (A – 5) = 0$<br>A = 5 or –1<br>None of these values are given in the options.",
           "questionType": "mcq"
         },
@@ -255,6 +272,7 @@
           "option_c": "0 ≤ x ≤ 2",
           "option_d": "0 ≥ x ≥ -2",
           "answer": 1,
+          "user_answer" : -1,
           "solution": "Given inequality is $x^2− 3x + 2 > 0$<br>$x^2− 2x − x + 2 > 0$<br>$(x − 2)(x − 1) > 0$<br>This gives $ x > 2 $ as one range and $ x < 1$ <br> or $x < 2$ as one range and $x > 1 $ as the other.<br>In between these two extremes, there is no value of x which satisfies the given inequality.",
           "questionType": "mcq"
         }

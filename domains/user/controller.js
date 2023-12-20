@@ -7,7 +7,6 @@ const authenticateUser = async (data) => {
 	try {
 		const { email, password } = data;
 
-		
 		const fetchedUser = await User.findOne({ email });
 
 		if (!fetchedUser) {
@@ -15,7 +14,6 @@ const authenticateUser = async (data) => {
 		}
 
 		const hashedPassword = fetchedUser.password;
-
 
 		const passwordMatch = await verifyHashData(password, hashedPassword);
 		if (!passwordMatch) {
@@ -71,16 +69,15 @@ const updatePraticeData = async (data) => {
 
 		const { userId, type, subId } = data;
 
-		const exists = await User.countDocuments({_id : userId,"attemptedQuestions._id" : type})
+		const exists = await User.countDocuments({_id : userId,"practiceQuestions._id" : type})
 		if (exists) {
 			await User.updateOne({_id : userId}, 
-				{ $addToSet : { "attemptedQuestions.$[e1].list" : {_id : subId } } },
+				{ $addToSet : { "practiceQuestions.$[e1].list" : {_id : subId } } },
 				{arrayFilters : [{"e1._id" : type}]} )
 		}else{
 			await User.updateOne(
 				{ _id : userId },
-				{ $addToSet : {
-					"attemptedQuestions" : [{
+				{ $addToSet : {"practiceQuestions" : [{
 						_id : type,
 						list : { _id : subId }
 					}]
@@ -91,7 +88,7 @@ const updatePraticeData = async (data) => {
 		return {
 			 "status": "success",
 			  "data": null,
-			  "message": "Video Addinf...."
+			  "message": "Added to database"
 			}
 
 	}catch(err) {
@@ -99,4 +96,40 @@ const updatePraticeData = async (data) => {
 	}
 };
 
-export { createNewUser , authenticateUser, updatePraticeData };
+const updateQuestionAttemptData = async (data) => {
+	try{
+
+		const { userId, type, questionData } = data;
+
+		const exists = await User.countDocuments({_id : userId, "attemptedQuestions._id" : type})
+		if (exists) {
+			
+			await User.updateOne({_id : userId}, 
+				{ $set : { "attemptedQuestions.$[e1].queData" : questionData } },
+				{arrayFilters : [{"e1._id" : type}]} )
+
+		}else{
+			
+			await User.updateOne(
+				{ _id : userId },
+				{ $addToSet : {
+					"attemptedQuestions" : [{
+						_id : type,
+						queData : questionData
+					}]
+				} },
+			)
+		}
+		
+		return {
+			 "status": "success",
+			  "data": null,
+			  "message": "Added to database"
+			}
+
+	}catch(err) {
+		throw Error(err);
+	}
+};
+
+export { createNewUser , authenticateUser, updatePraticeData, updateQuestionAttemptData };

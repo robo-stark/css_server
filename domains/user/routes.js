@@ -1,11 +1,11 @@
 import express from "express";
 const userRoutes = express.Router();
-import { createNewUser , authenticateUser, updatePraticeData } from './controller.js';
+import { createNewUser , authenticateUser, updatePraticeData, updateQuestionAttemptData } from './controller.js';
 import verifyToken from "../../middleware/auth.js";
 
 
-//Update Watched Data
-userRoutes.post("/update", async (req, res) => {
+
+userRoutes.post("/update/practice", async (req, res) => {
 	try {
 
 		let { userId, type, subId } = req.body;
@@ -16,6 +16,7 @@ userRoutes.post("/update", async (req, res) => {
 
 		const updateResult = await updatePraticeData({userId, type, subId});
 		res.status(200).json(updateResult);
+	
 
 	} catch (err) {
 		res.status(400).send({
@@ -25,6 +26,30 @@ userRoutes.post("/update", async (req, res) => {
 		});
 	}
 });
+
+
+userRoutes.post("/update/attempt", async (req, res) => {
+	try {
+
+		let { userId, type, questionData } = req.body;
+	
+		if (!(userId && questionData && type)) {
+			throw Error("Empty fields received!");
+		}
+
+		const updateResult = await updateQuestionAttemptData({userId, type, questionData});
+		res.status(200).json(updateResult);
+	
+
+	} catch (err) {
+		res.status(400).send({
+			  "status": "failed",
+			  "data": null,
+			  "message": err.message
+		});
+	}
+});
+
 
 
 //Login

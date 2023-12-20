@@ -10,12 +10,19 @@ const UserSchema = new Schema({
 	},
 	password : String,
 	token : String,
-	watchedVideos : [{ _id : {type : String} }],
 	attemptedQuestions : [{ 
+			_id : {type : String} ,
+			queData : {
+				que_varc : [{_id : {type : String}, user_answer : { type : Number} }],
+				que_lrdi : [{_id : {type : String}, user_answer : { type : Number} }],
+				que_quants : [{_id : {type : String}, user_answer : { type : Number} }]
+			}
+			
+		}],
+	practiceQuestions : [{ 
 			_id : {type : String} ,
 			list : [ {_id : {type : String} }]
 		}]
 });
 
 export default mongoose.model("User", UserSchema);
-
