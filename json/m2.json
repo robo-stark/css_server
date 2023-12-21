@@ -4,13 +4,13 @@
   "list": [
     {
       "id": "m201",
-      "type" : "mr",
+      "type" : "mocks",
       "category": "Mock-I",
       "sno": 1
     },
     {
       "id": "m202",
-      "type" : "mr",
+      "type" : "mocks",
       "category": "Mock-II",
       "sno": 2
     }

@@ -5,13 +5,9 @@ const getHomeData = async() =>{
 		const m = await import('../../json/home.json' , {
 			assert: { type: 'json' }
 		});
-		return {
-			  "status": "success",
-			  "data": m.default,
-			  "message": "Data Received"
-			}
+		return m.default;
 	}catch(err){
-		throw Error(err);
+		throw Error("Failed to fetch resource");
 	}
 }
 
@@ -131,7 +127,7 @@ const getMockQuestion = async(data) => {
 		}
 
 	}catch(err){
-		throw Error(err);
+		throw Error("Failed to fetch resource");
 	}
 }
 
@@ -146,14 +142,11 @@ const getCategory = async(catId) => {
 			assert: { type: 'json' }
 		});
 		
-		return {
-			  "status": "success",
-			  "data": m.default,
-			  "message": "Data Received"
-			}
+		return m.default;
+			  
 
 	}catch(err){
-		throw Error(err);
+		throw Error("Failed to fetch resource");
 	}
 }
 	

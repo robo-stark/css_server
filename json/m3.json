@@ -4,15 +4,13 @@
   "list": [
     {
       "id": "m301",
-      "type" : "mr",
-      "filter" : "Quants",
+      "type" : "sectional",
       "category": "Algebra",
       "sno": 1
     },
     {
       "id": "m302",
-      "type" : "mr",
-      "filter" : "LRDI",
+      "type" : "sectional",
       "category": "LRDI-I",
       "sno": 2
     }

@@ -4,13 +4,13 @@
   "list": [
     {
       "id": "m101",
-      "type" : "mr",
+      "type" : "pyq",
       "category": "Cat 2023 Slot-I",
       "sno": 1
     },
     {
       "id": "m102",
-      "type" : "mr",
+      "type" : "pyq",
       "category": "Cat 2023 Slot-II",
       "sno": 2
     }

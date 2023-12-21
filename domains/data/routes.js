@@ -13,7 +13,7 @@ dataRoutes.get("/", async (req, res) => {
 		res.status(400).send({
 			  "status": "failed",
 			  "data": null,
-			  "message": "server error"
+			  "message": err.message
 		});
 	}
 });
