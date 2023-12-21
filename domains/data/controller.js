@@ -24,14 +24,10 @@ const getResource = async(data) => {
 			assert: { type: 'json' }
 		});
 		
-		return {
-			  "status": "success",
-			  "data": m.default,
-			  "message": "Data Received"
-			}
+		return m.default;
 
 	}catch(err){
-		throw Error(err);
+		throw Error("Failed to fetch resource");
 	}
 }
 
@@ -48,21 +44,20 @@ const getPracticeQuestion = async(data) => {
 
 		const user = await User.findOne({_id : userId});
 		const userData = user.practiceQuestions.find((ele) => ele._id === subId );
-		const queList = userData.list
-		queList.forEach((ele) => {
-			for (var i = 0; i < m.data.length; i++){
-				if (m.data[i].questionId === ele._id) {
-					m.data[i].attempted = true;
-					break;
-				}
-			}
-		})
+		if (userData != null){
 
-		return {
-			  "status": "success",
-			  "data": m,
-			  "message": "Data Received"
-			}
+			const queList = userData.list
+			queList.forEach((ele) => {
+				for (var i = 0; i < m.data.length; i++){
+					if (m.data[i].questionId === ele._id) {
+						m.data[i].attempted = true;
+						break;
+					}
+				}
+			})
+			return m;
+
+		}else { return m; }
 
 	}catch(err){
 		throw Error(err);
@@ -80,13 +75,8 @@ const getMockQuestion = async(data) => {
 		});
 		m = m.default;
 
-		if (dataType == "new") {
-			return {
-			  "status": "success",
-			  "data": m,
-			  "message": "Data Received"
-			}
-		}else {
+		if (dataType == "new") { return m; }
+		else {
 
 			// make a report here why it went wrong ->
 			const user = await User.findOne({_id : userId});
@@ -137,12 +127,7 @@ const getMockQuestion = async(data) => {
 				}
 			}
 
-			return {
-				  "status": "success",
-				  "data": m,
-				  "message": "Data Received"
-				}
-
+			return m;
 		}
 
 	}catch(err){

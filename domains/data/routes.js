@@ -10,7 +10,7 @@ dataRoutes.get("/", async (req, res) => {
 		let jsonData = await getHomeData(); 
 		res.status(200).json(jsonData); 
 	}catch(err) {
-		res.status(200).send({
+		res.status(400).send({
 			  "status": "failed",
 			  "data": null,
 			  "message": "server error"
@@ -32,7 +32,7 @@ dataRoutes.get("/:id", async (req, res) => {
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
-		res.status(200).send({
+		res.status(400).send({
 			  "status": "failed",
 			  "data": null,
 			  "message": "server error"
@@ -41,6 +41,7 @@ dataRoutes.get("/:id", async (req, res) => {
 });
 
 
+// data/pr/p101
 dataRoutes.get("/:type/:id", async (req, res) => {
 	try {
 
@@ -55,10 +56,10 @@ dataRoutes.get("/:type/:id", async (req, res) => {
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
-		res.status(200).send({
+		res.status(400).send({
 			  "status": "failed",
 			  "data": null,
-			  "message": "server error"
+			  "message": err.message
 		});
 	}
 });
@@ -78,7 +79,7 @@ dataRoutes.post("/pr", async (req, res) => {
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
-		res.status(200).send({
+		res.status(400).send({
 			  "status": "failed",
 			  "data": null,
 			  "message": err.message
@@ -101,7 +102,7 @@ dataRoutes.post("/mr/:dataType", async (req, res) => {
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
-		res.status(200).send({
+		res.status(400).send({
 			  "status": "failed",
 			  "data": null,
 			  "message": err.message
