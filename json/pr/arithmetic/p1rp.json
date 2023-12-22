@@ -12,7 +12,7 @@
       "option_c": "3/4",
       "option_d": "27/4",
       "answer": 2,
-      "solution": "$\frac ab = \frac 13$ $\frac bc = \frac 21$ <br> => a : b :c = 2 : 6 : 3 <br> Similarly a : b : c : d : e : f = 2 : 6 : 3 : 6 : 2 : 8 <br> ∴ $\frac{abc}{def} = \frac{2\times6\times3}{6\times2\times8}  = \frac 38$",
+      "solution": "c = \\pm\\sqrt{a^2 + b^2}",
       "questionType": "mcq"
     },
     {
