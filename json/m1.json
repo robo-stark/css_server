@@ -5,12 +5,16 @@
     {
       "id": "m101",
       "type" : "pyq",
+      "total_time": 120,
+      "total_question": 66,
       "category": "Cat 2023 Slot-I",
       "sno": 1
     },
     {
       "id": "m102",
       "type" : "pyq",
+      "total_time": 120,
+      "total_question": 66,
       "category": "Cat 2023 Slot-II",
       "sno": 2
     }
