@@ -1,8 +1,7 @@
 {
   "id": "m101",
   "category": "Cat 2023 Slot-I",
-  "que_varc": [
-    {
+  "que_varc": {
       "total_question": 9,
       "total_time": 10,
       "question_data": [
@@ -133,10 +132,8 @@
           "questionType": "mcq"
         }
       ]
-    }
-  ],
-  "que_lrdi": [
-    {
+    },
+  "que_lrdi": {
       "total_question": 4,
       "total_time": 10,
       "question_data": [
@@ -197,10 +194,8 @@
           "questionType": "mcq"
         }
       ]
-    }
-  ],
-  "que_quants": [
-    {
+    },
+  "que_quants": {
       "total_question": 5,
       "total_time": 15,
       "question_data": [
@@ -276,5 +271,5 @@
         }
       ]
     }
-  ]
+  
 }
