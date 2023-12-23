@@ -32,7 +32,7 @@
       "attempted": false,
       "sno": 3,
       "questionId": "rp03",
-      "question": "If $$\\frac ab = \\frac 23 , \\frac bc = \\frac 35 $$ and \\frac cd = \\frac 56$$ then what is the value of $$\\frac{3a+2b+4c+d}{3d+4c}$$ ?",
+      "question": "If $$\\frac ab = \\frac 23 , \\frac bc = \\frac 35 and \\frac cd = \\frac 56$$ then what is the value of $$\\frac{3a+2b+4c+d}{3d+4c}$$ ?",
       "option_a": "19/6",
       "option_b": 38,
       "option_c": 1,
