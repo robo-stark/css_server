@@ -6,7 +6,7 @@
       "attempted": false,
       "sno": 1,
       "questionId": "rp01",
-      "question": "\\begin{equation}\\begin{split}(a - b)^2 &= (a - b)(a - b) \\&= a(a - b) - b(a - b)\\&= a^2 -ab -ba + b^2\\&= a^2 + 2ab + b^2   \\nonumber\\end{split}\\end{equation}",
+      "question": "$$\\begin{equation}\\begin{split}(a - b)^2 &= (a - b)(a - b) \\&= a(a - b) - b(a - b)\\&= a^2 -ab -ba + b^2\\&= a^2 + 2ab + b^2   \\nonumber\\end{split}\\end{equation}$$",
       "option_a": "27/8",
       "option_b": "3/8",
       "option_c": "3/4",
