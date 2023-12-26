@@ -4,14 +4,14 @@
   "list": [
     {
       "id": "m301",
-      "type" : "sectional",
-      "category": "Algebra",
+      "type" : "mr",
+      "category": "Quants",
       "sno": 1
     },
     {
       "id": "m302",
-      "type" : "sectional",
-      "category": "LRDI-I",
+      "type" : "mr",
+      "category": "Dilr",
       "sno": 2
     }
   ]

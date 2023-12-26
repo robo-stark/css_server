@@ -1,5 +1,5 @@
 import express, { json } from "express";
-import { getHomeData, getResource, getCategory, getPracticeQuestion, getMockQuestion} from './controller.js';
+import { getHomeData, getResource, getCategory, getPracticeQuestion, getMockQuestion, getSectionalQuestion} from './controller.js';
 
 const dataRoutes = express.Router();
 
