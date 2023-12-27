@@ -15,7 +15,7 @@
   },
   {
     "resourceId": "h2",
-    "resourceName": "Practice",
+    "resourceName": "Practice Resources",
     "resourceData": [
       {
         "id": "p1",
@@ -29,18 +29,14 @@
   },
   {
     "resourceId": "h3",
-    "resourceName": "Full Mocks",
+    "resourceName": "Mock Resources",
     "resourceData": [
       {
         "id": "m1",
-        "name": "Previous Year Mocks"
+        "name": "Full Mocks"
       },
       {
         "id": "m2",
-        "name": "Complete Mocks"
-      },
-      {
-        "id": "m3",
         "name": "Sectional Mocks"
       }
     ]

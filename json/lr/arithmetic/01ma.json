@@ -1,0 +1,49 @@
+{
+  "id": "01ma",
+  "category": "Mixtures & Alligations",
+  "teacher": "Ravi Prakash Sir",
+  "list": [
+    {
+      "id": "01ma1",
+      "sno": 1,
+      "watched": false,
+      "name": "Alligation & Mixture - 1",
+      "link": "https://www.youtube.com/watch?v=3LmRyBpIhgQ"
+    },
+    {
+      "id": "01ma2",
+      "sno": 2,
+      "watched": false,
+      "name": "Alligation & Mixture - 2",
+      "link": "https://www.youtube.com/watch?v=RVF9kKdJJE8"
+    },
+    {
+      "id": "01ma3",
+      "sno": 3,
+      "watched": false,
+      "name": "Alligation & Mixture - 3",
+      "link": "https://www.youtube.com/watch?v=qQcGkxuf4ws"
+    },
+    {
+      "id": "01ma4",
+      "sno": 4,
+      "watched": false,
+      "name": "Alligation & Mixture - 4",
+      "link": "https://www.youtube.com/watch?v=Y5OkBhdVDIk"
+    },
+    {
+      "id": "01ma5",
+      "sno": 5,
+      "watched": false,
+      "name": "Alligation & Mixture - 5",
+      "link": "https://www.youtube.com/watch?v=1jONQi6zFcw"
+    },
+    {
+      "id": "01ma6",
+      "sno": 6,
+      "watched": false,
+      "name": "Alligation & Mixture - 6",
+      "link": "https://www.youtube.com/watch?v=cCE1_cKXlsk"
+    }
+  ]
+}

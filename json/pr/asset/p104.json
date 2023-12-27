@@ -1,0 +1,36 @@
+{
+  "id": "p104",
+  "category": "Geometry",
+  "data": [
+    {
+      "id": "p1bt",
+      "type" : "geometry",
+      "category": "Triangle",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "p1pb",
+      "type" : "geometry",
+      "category": "Quadrilateral & Polygon",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "p1tg",
+      "type" : "geometry",
+      "category": "Circle",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "p1pc",
+      "type" : "geometry",
+      "category": "Mensuration",
+      "sno": 4,
+      "count": 0
+    }
+  ]
+}
+
+

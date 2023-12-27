@@ -1,0 +1,36 @@
+{
+  "id": "p103",
+  "category": "Modern Math",
+  "data": [
+    {
+      "id": "p1bt",
+      "type" : "mmath",
+      "category": "Binomial Theorm",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "p1pb",
+      "type" : "mmath",
+      "category": "Probability",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "p1tg",
+      "type" : "mmath",
+      "category": "Trigonometry",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "p1pc",
+      "type" : "mmath",
+      "category": "Permutations & Combinations",
+      "sno": 4,
+      "count": 0
+    }
+  ]
+}
+
+

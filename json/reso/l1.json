@@ -11,13 +11,13 @@
     {
       "id": "l102",
       "type" : "lr",
-      "category": "Algebra & Modern Math",
+      "category": "Algebra",
       "sno": 2
     },
     {
       "id": "l103",
       "type" : "lr",
-      "category": "Number System",
+      "category": "Numbers",
       "sno": 3
     },
     {
@@ -25,6 +25,12 @@
       "type" : "lr",
       "category": "Geometry",
       "sno": 4
+    },
+    {
+      "id": "l105",
+      "type" : "lr",
+      "category": "Modern Math",
+      "sno": 5
     }
   ]
 }

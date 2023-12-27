@@ -1,15 +1,15 @@
 {
-  "id": "m3",
+  "id": "m2",
   "name": "Sectional Mocks",
   "list": [
     {
-      "id": "m301",
+      "id": "m201",
       "type" : "mr",
       "category": "Quants",
       "sno": 1
     },
     {
-      "id": "m302",
+      "id": "m202",
       "type" : "mr",
       "category": "Dilr",
       "sno": 2

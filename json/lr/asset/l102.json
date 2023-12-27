@@ -1,0 +1,41 @@
+{
+  "id": "l102",
+  "category": "Algebra",
+  "data": [
+    {
+      "id": "02ps",
+      "type" : "algebra",
+      "category": "Polynomials & Simple Equations",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "02qh",
+      "type" : "algebra",
+      "category": "Quadratic & Higher Degree Equations",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "02ie",
+      "type" : "algebra",
+      "category": "Inequality",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "02aa",
+      "type" : "algebra",
+      "category": "Advance Algebra",
+      "sno": 4,
+      "count": 0
+    },
+    {
+      "id": "02ss",
+      "type" : "algebra",
+      "category": "Sequences & Series",
+      "sno": 5,
+      "count": 0
+    }
+  ]
+}

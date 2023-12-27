@@ -1,0 +1,35 @@
+{
+  "id": "01av",
+  "category": "Average",
+  "teacher": "Ravi Prakash Sir",
+  "list": [
+    {
+      "id": "01av1",
+      "sno": 1,
+      "watched": false,
+      "name": "Average 1",
+      "link": "https://www.youtube.com/watch?v=TBhanaOLNvc"
+    },
+    {
+      "id": "01av2",
+      "sno": 2,
+      "watched": false,
+      "name": "Average 2",
+      "link": "https://www.youtube.com/watch?v=q-ZUkah-xys"
+    },
+    {
+      "id": "01av3",
+      "sno": 3,
+      "watched": false,
+      "name": "Average 3",
+      "link": "https://www.youtube.com/watch?v=lxCGzzUZBj8"
+    },
+    {
+      "id": "01av4",
+      "sno": 4,
+      "watched": false,
+      "name": "Average 4",
+      "link": "https://www.youtube.com/watch?v=i3o8REcdEXQ"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "p101",
+  "category": "Arithmetic",
+  "data": [
+    {
+      "id": "p1rp",
+      "type" : "arithmetic",
+      "category": "Ratio and Proportion",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "p1pl",
+      "type" : "arithmetic",
+      "category": "Profit, Loss & Discount",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "p1ma",
+      "type" : "arithmetic",
+      "category": "Mixtures & Alligations",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "p1sc",
+      "type" : "arithmetic",
+      "category": "Simple & Compound Interest",
+      "sno": 4,
+      "count": 0
+    },
+    {
+      "id": "p1tw",
+      "type" : "arithmetic",
+      "category": "Time & Work",
+      "sno": 5,
+      "count": 0
+    },
+    {
+      "id": "p1bs",
+      "type" : "arithmetic",
+      "category": "Boats & Stream",
+      "sno": 6,
+      "count": 0
+    },
+    {
+      "id": "p1pc",
+      "type" : "arithmetic",
+      "category": "Percentage Calculations",
+      "sno": 7,
+      "count": 0
+    },
+    {
+      "id": "p1lc",
+      "type" : "arithmetic",
+      "category": "Linear & Circular Races",
+      "sno": 8,
+      "count": 0
+    }
+  ]
+}

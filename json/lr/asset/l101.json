@@ -1,0 +1,69 @@
+{
+  "id": "l101",
+  "category": "Arithmetic",
+  "data": [
+    {
+      "id": "01sm",
+      "type" : "arithmetic",
+      "category": "Speed Math",
+      "sno": 1,
+      "count": 6
+    },
+    {
+      "id": "01av",
+      "type" : "arithmetic",
+      "category": "Averages",
+      "sno": 2,
+      "count": 4
+    },
+    {
+      "id": "01rp",
+      "type" : "arithmetic",
+      "category": "Ratio & Proportion",
+      "sno": 3,
+      "count": 8
+    },
+    {
+      "id": "01ma",
+      "type" : "arithmetic",
+      "category": "Mixtures & Alligations",
+      "sno": 4,
+      "count": 6
+    },
+    {
+      "id": "01pl",
+      "type" : "arithmetic",
+      "category": "Profit, Loss & Discount",
+      "sno": 5,
+      "count": 0
+    },
+    {
+      "id": "01sc",
+      "type" : "arithmetic",
+      "category": "Simple & Compound Interest",
+      "sno": 6,
+      "count": 0
+    },
+    {
+      "id": "01tw",
+      "type" : "arithmetic",
+      "category": "Time & Work",
+      "sno": 7,
+      "count": 0
+    },
+    {
+      "id": "01td",
+      "type" : "arithmetic",
+      "category": "Time, Speed & Distance",
+      "sno": 8,
+      "count": 0
+    },
+    {
+      "id": "01lc",
+      "type" : "arithmetic",
+      "category": "Linear & Circular Tracks",
+      "sno": 9,
+      "count": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "m1",
+  "name": "Full Mocks",
+  "list": [
+    {
+      "id": "m101",
+      "type" : "mr",
+      "category": "Previous Year Mocks",
+      "sno": 1
+    },
+    {
+      "id": "m102",
+      "type" : "mr",
+      "category": "Complete Mocks",
+      "sno": 2
+    }
+  ]
+}

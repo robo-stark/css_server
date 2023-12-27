@@ -1,0 +1,64 @@
+{
+  "id": "l105",
+  "category": "Numbers",
+  "data": [
+    {
+      "id": "05bn",
+      "type" : "numbers",
+      "category": "Basic Numbers",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "05fs",
+      "type" : "numbers",
+      "category": "Factors",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "05ft",
+      "type" : "numbers",
+      "category": "Factorial",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "05hl",
+      "type" : "numbers",
+      "category": "HCF & LCM",
+      "sno": 4,
+      "count": 0
+    },
+    {
+      "id": "05dv",
+      "type" : "numbers",
+      "category": "Divisibility",
+      "sno": 5,
+      "count": 0
+    },
+    {
+      "id": "05rd",
+      "type" : "numbers",
+      "category": "Remainder",
+      "sno": 6,
+      "count": 0
+    },
+    {
+      "id": "05bs",
+      "type" : "numbers",
+      "category": "Base System",
+      "sno": 7,
+      "count": 0
+    },
+    {
+      "id": "05cd",
+      "type" : "numbers",
+      "category": "Calendars",
+      "sno": 8,
+      "count": 0
+    }
+  ]
+}
+
+

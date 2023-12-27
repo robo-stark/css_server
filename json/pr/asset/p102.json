@@ -1,0 +1,69 @@
+{
+  "id": "p102",
+  "category": "Algebra",
+  "data": [
+    {
+      "id": "p1lg",
+      "type" : "algebra",
+      "category": "Logarithm",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "p1cg",
+      "type" : "algebra",
+      "category": "Coordinate Geometry",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "p1mm",
+      "type" : "algebra",
+      "category": "Maxima and Minima",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "p1ss",
+      "type" : "algebra",
+      "category": "Sequences & Series",
+      "sno": 4,
+      "count": 0
+    },
+    {
+      "id": "p1md",
+      "type" : "algebra",
+      "category": "Modulus",
+      "sno": 5,
+      "count": 0
+    },
+    {
+      "id": "p1ie",
+      "type" : "algebra",
+      "category": "Inequality",
+      "sno": 6,
+      "count": 0
+    },
+    {
+      "id": "p1fc",
+      "type" : "algebra",
+      "category": "Functions",
+      "sno": 7,
+      "count": 0
+    },
+    {
+      "id": "p1pl",
+      "type" : "algebra",
+      "category": "Polynomials & Linear Equations",
+      "sno": 8,
+      "count": 0
+    },
+    {
+      "id": "p1qh",
+      "type" : "algebra",
+      "category": "Quadratic & Higher Degree Equations",
+      "sno": 9,
+      "count": 0
+    }
+  ]
+}

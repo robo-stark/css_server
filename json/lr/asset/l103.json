@@ -1,0 +1,43 @@
+{
+  "id": "l103",
+  "category": "Modern Math",
+  "data": [
+    {
+      "id": "03lg",
+      "type" : "mmath",
+      "category": "Logarithm",
+      "sno": 1,
+      "count": 0
+    },
+    {
+      "id": "03fc",
+      "type" : "mmath",
+      "category": "Functions",
+      "sno": 2,
+      "count": 0
+    },
+    {
+      "id": "03pb",
+      "type" : "mmath",
+      "category": "Probability",
+      "sno": 3,
+      "count": 0
+    },
+    {
+      "id": "03ss",
+      "type" : "mmath",
+      "category": "Statistics",
+      "sno": 4,
+      "count": 0
+    },
+    {
+      "id": "03pc",
+      "type" : "mmath",
+      "category": "Permutations & Combinations",
+      "sno": 5,
+      "count": 0
+    }
+  ]
+}
+
+
