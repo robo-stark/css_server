@@ -82,10 +82,11 @@ const getPracticeResource = async(data) => {
 		if (userData != null){
 
 			const queList = userData.list
+			
 			queList.forEach((ele) => {
-				for (var i = 0; i < m.data.length; i++){
-					if (m.data[i].questionId === ele._id) {
-						m.data[i].attempted = true;
+				for (var i = 0; i < m.asset_data.length; i++){
+					if (m.asset_data[i].questionId === ele._id) {
+						m.asset_data[i].attempted = true;
 						break;
 					}
 				}
