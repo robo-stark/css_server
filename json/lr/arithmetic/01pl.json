@@ -1,0 +1,42 @@
+{
+  "id": "01pl",
+  "category": "Profit, Loss & Discount",
+  "teacher": "Ravi Prakash Sir",
+  "data": [
+    {
+      "id": "01pl1",
+      "sno": 1,
+      "watched": false,
+      "name": "(1) Percentages & Profit Loss - 4",
+      "link": "https://www.youtube.com/watch?v=bigCbKeUPO4"
+    },
+    {
+      "id": "01pl2",
+      "sno": 2,
+      "watched": false,
+      "name": "(2) Percentages & Profit Loss - 5",
+      "link": "https://www.youtube.com/watch?v=3Q6V7qVGReo"
+    },
+    {
+      "id": "01pl3",
+      "sno": 3,
+      "watched": false,
+      "name": "(3) Percentages & Profit Loss - 6",
+      "link": "https://www.youtube.com/watch?v=xDU1mvVga_o"
+    },
+    {
+      "id": "01pl4",
+      "sno": 4,
+      "watched": false,
+      "name": "(4) Percentages & Profit Loss - 7",
+      "link": "https://www.youtube.com/watch?v=czMjyZAy6Io"
+    },
+    {
+      "id": "01pl4",
+      "sno": 4,
+      "watched": false,
+      "name": "(5) Percentages & Profit Loss - 8",
+      "link": "https://www.youtube.com/watch?v=QPk0yLakPQE"
+    }
+  ]
+}

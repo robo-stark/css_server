@@ -7,7 +7,7 @@
       "type" : "pyq",
       "category": "Cat 2023 Slot-I",
       "sno": 1,
-      "count": 0
+      "count": 1
     },
     {
       "id": "0123s2",
@@ -25,3 +25,6 @@
     }
   ]
 }
+
+
+
