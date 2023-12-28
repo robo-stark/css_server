@@ -1,4 +1,4 @@
-import express, { request } from "express";
+import express from "express";
 import { getHomeData, getResource, getAsset, getLearningResource, getPracticeResource, getMockResource} from './controller.js';
 
 const dataRoutes = express.Router();
@@ -18,16 +18,16 @@ dataRoutes.get("/", async (req, res) => {
 });
 
 
-dataRoutes.get("/:subId", async (req, res) => {
+dataRoutes.get("/:id", async (req, res) => {
 	try {
 
-		let subId  = req.params.subId;
+		let id  = req.params.id;
 		
-		if (!subId) {
+		if (!id) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getResource(subId); 
+		const jsonData = await getResource(id); 
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
@@ -40,17 +40,17 @@ dataRoutes.get("/:subId", async (req, res) => {
 });
 
 
-dataRoutes.get("/:type/:subId", async (req, res) => {
+dataRoutes.get("/:resoType/:resoId", async (req, res) => {
 	try {
 
-		let type = req.params.type;
-		let subId = req.params.subId;
+		let resoType = req.params.resoType;
+		let resoId = req.params.resoId;
 		
-		if (!(type && subId)) {
+		if (!(resoType && resoId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getAsset({type, subId});
+		const jsonData = await getAsset({resoType, resoId});
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
@@ -66,13 +66,13 @@ dataRoutes.get("/:type/:subId", async (req, res) => {
 dataRoutes.post("/lr", async (req, res) => {
 	try {
 
-		let { userId, type, subId } = req.body;
+		let { userId, assetType, assetId } = req.body;
 		
-		if (!(type && subId && userId)) {
+		if (!(assetType && assetId && userId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getLearningResource({userId, type, subId});
+		const jsonData = await getLearningResource({userId, assetType, assetId});
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
@@ -89,13 +89,13 @@ dataRoutes.post("/lr", async (req, res) => {
 dataRoutes.post("/pr", async (req, res) => {
 	try {
 
-		let { userId, type, subId } = req.body;
+		let { userId, assetType, assetId } = req.body;
 		
-		if (!(type && subId && userId)) {
+		if (!(assetType && assetId && userId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getPracticeResource({userId, type, subId});
+		const jsonData = await getPracticeResource({userId, assetType, assetId});
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
@@ -112,13 +112,13 @@ dataRoutes.post("/mr/:dataType", async (req, res) => {
 	try {
 
 		const dataType = req.params.dataType;
-		let { userId, type, subId } = req.body;
+		let { userId, assetType, assetId } = req.body;
 		
-		if (!(type && subId && userId && dataType)) {
+		if (!(assetType && assetId && userId && dataType)) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getMockResource({userId, type, subId, dataType});
+		const jsonData = await getMockResource({userId, assetType, assetId, dataType});
 		res.status(200).json(jsonData); 
 
 	}catch(err) {

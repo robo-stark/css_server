@@ -1,32 +1,32 @@
 {
-  "id": "p103",
-  "category": "Modern Math",
-  "data": [
+  "reso_id": "p103",
+  "reso_name": "Modern Math",
+  "reso_data": [
     {
-      "id": "p1bt",
-      "type" : "mmath",
-      "category": "Binomial Theorm",
+      "asset_id": "p1bt",
+      "asset_type" : "mmath",
+      "asset_name": "Binomial Theorm",
       "sno": 1,
       "count": 0
     },
     {
-      "id": "p1pb",
-      "type" : "mmath",
-      "category": "Probability",
+      "asset_id": "p1pb",
+      "asset_type" : "mmath",
+      "asset_name": "Probability",
       "sno": 2,
       "count": 0
     },
     {
-      "id": "p1tg",
-      "type" : "mmath",
-      "category": "Trigonometry",
+      "asset_id": "p1tg",
+      "asset_type" : "mmath",
+      "asset_name": "Trigonometry",
       "sno": 3,
       "count": 0
     },
     {
-      "id": "p1pc",
-      "type" : "mmath",
-      "category": "Permutations & Combinations",
+      "asset_id": "p1pc",
+      "asset_type" : "mmath",
+      "asset_name": "Permutations & Combinations",
       "sno": 4,
       "count": 0
     }

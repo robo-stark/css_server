@@ -1,25 +1,25 @@
 {
-  "id": "m101",
-  "category": "Previous Year Mocks",
-  "data": [
+  "reso_id": "m101",
+  "reso_name": "Previous Year Mocks",
+  "reso_data": [
     {
-      "id": "0123s1",
-      "type" : "pyq",
-      "category": "Cat 2023 Slot-I",
+      "asset_id": "0123s1",
+      "asset_type" : "pyq",
+      "asset_name": "Cat 2023 Slot-I",
       "sno": 1,
       "count": 1
     },
     {
-      "id": "0123s2",
-      "type" : "pyq",
-      "category": "Cat 2023 Slot-II",
+      "asset_id": "0123s2",
+      "asset_type" : "pyq",
+      "asset_name": "Cat 2023 Slot-II",
       "sno": 2,
       "count": 0
     },
     {
-      "id": "0123s3",
-      "type" : "pyq",
-      "category": "Cat 2023 Slot-III",
+      "asset_id": "0123s3",
+      "asset_type" : "pyq",
+      "asset_name": "Cat 2023 Slot-III",
       "sno": 3,
       "count": 0
     }

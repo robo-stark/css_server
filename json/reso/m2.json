@@ -3,15 +3,15 @@
   "name": "Sectional Mocks",
   "list": [
     {
-      "id": "m201",
-      "type" : "mr",
-      "category": "Quants",
+      "reso_id": "m201",
+      "reso_type" : "mr",
+      "reso_name": "Quants",
       "sno": 1
     },
     {
-      "id": "m202",
-      "type" : "mr",
-      "category": "Dilr",
+      "reso_id": "m202",
+      "reso_type" : "mr",
+      "reso_name": "Dilr",
       "sno": 2
     }
   ]

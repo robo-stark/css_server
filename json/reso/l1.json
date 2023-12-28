@@ -3,33 +3,33 @@
   "name": "Quants",
   "list": [
     {
-      "id": "l101",
-      "type" : "lr",
-      "category": "Arithmetic",
+      "reso_id": "l101",
+      "reso_type" : "lr",
+      "reso_name": "Arithmetic",
       "sno": 1
     },
     {
-      "id": "l102",
-      "type" : "lr",
-      "category": "Algebra",
+      "reso_id": "l102",
+      "reso_type" : "lr",
+      "reso_name": "Algebra",
       "sno": 2
     },
     {
-      "id": "l103",
-      "type" : "lr",
-      "category": "Numbers",
+      "reso_id": "l103",
+      "reso_type" : "lr",
+      "reso_name": "Numbers",
       "sno": 3
     },
     {
-      "id": "l104",
-      "type" : "lr",
-      "category": "Geometry",
+      "reso_id": "l104",
+      "reso_type" : "lr",
+      "reso_name": "Geometry",
       "sno": 4
     },
     {
-      "id": "l105",
-      "type" : "lr",
-      "category": "Modern Math",
+      "reso_id": "l105",
+      "reso_type" : "lr",
+      "reso_name": "Modern Math",
       "sno": 5
     }
   ]

@@ -1,11 +1,11 @@
 {
-  "id": "m201",
-  "category": "Quants",
-  "data": [
+  "reso_id": "m201",
+  "reso_name": "Quants",
+  "reso_data": [
     {
-      "id": "01ag1",
-      "type" : "quants",
-      "category": "Algebra-I",
+      "asset_id": "01ag1",
+      "asset_type" : "quants",
+      "asset_name": "Algebra-I",
       "sno": 1,
       "count": 0
     }

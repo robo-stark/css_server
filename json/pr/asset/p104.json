@@ -1,32 +1,32 @@
 {
-  "id": "p104",
-  "category": "Geometry",
-  "data": [
+  "reso_id": "p104",
+  "reso_name": "Geometry",
+  "reso_data": [
     {
-      "id": "p1bt",
-      "type" : "geometry",
-      "category": "Triangle",
+      "asset_id": "p1bt",
+      "asset_type" : "geometry",
+      "asset_name": "Triangle",
       "sno": 1,
       "count": 0
     },
     {
-      "id": "p1pb",
-      "type" : "geometry",
-      "category": "Quadrilateral & Polygon",
+      "asset_id": "p1pb",
+      "asset_type" : "geometry",
+      "asset_name": "Quadrilateral & Polygon",
       "sno": 2,
       "count": 0
     },
     {
-      "id": "p1tg",
-      "type" : "geometry",
-      "category": "Circle",
+      "asset_id": "p1tg",
+      "asset_type" : "geometry",
+      "asset_name": "Circle",
       "sno": 3,
       "count": 0
     },
     {
-      "id": "p1pc",
-      "type" : "geometry",
-      "category": "Mensuration",
+      "asset_id": "p1pc",
+      "asset_type" : "geometry",
+      "asset_name": "Mensuration",
       "sno": 4,
       "count": 0
     }

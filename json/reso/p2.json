@@ -3,15 +3,15 @@
   "name": "LRDI",
   "list": [
     {
-      "id": "p201",
-      "type" : "pr",
-      "category": "Logical Reasoning",
+      "reso_id": "p201",
+      "reso_type" : "pr",
+      "reso_name": "Logical Reasoning",
       "sno": 1
     },
     {
-      "id": "p202",
-      "type" : "pr",
-      "category": "Data Interpretation",
+      "reso_id": "p202",
+      "reso_type" : "pr",
+      "reso_name": "Data Interpretation",
       "sno": 2
     }
   ]

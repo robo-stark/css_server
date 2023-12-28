@@ -1,22 +1,13 @@
 {
-  "id": "l201",
-  "category": "Logical Reasoning",
-  "data": [
+  "reso_id": "l201",
+  "reso_name": "Logical Reasoning",
+  "reso_data": [
     {
-      "id": "l2lc",
-      "category": "Linear & Circular Arrangement",
-      "teacher": "Ravi Prakash Sir",
-      "link" : "https://youtu.be/4tI-h-GKWVk?si=Bwz7dgfExbnvY4mu",
+      "asset_id": "05bn",
+      "asset_type" : "numbers",
+      "asset_name": "Basic Numbers",
       "sno": 1,
-      "count": 5
-    },
-    {
-      "id": "l2cu",
-      "category": "Cubes",
-      "teacher": "Ravi Prakash Sir",
-      "sno": 2,
-      "link" : "https://youtu.be/0TdF_yyNkZk?si=ZUUJ5TjMoPEaIC-s",
-      "count": 4
+      "count": 0
     }
   ]
 }

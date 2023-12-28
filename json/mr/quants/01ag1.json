@@ -1,8 +1,8 @@
 {
-  "id": "01ag1",
+  "asset_id": "01ag1",
   "total_time" : 10,
   "total_question" : 3,
-  "question_data": [
+  "asset_data": [
     {
       "sno": 1,
       "questionId": "rp01",

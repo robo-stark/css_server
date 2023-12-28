@@ -1,8 +1,8 @@
 {
-  "id": "01ma",
-  "category": "Mixtures & Alligations",
+  "asset_id": "01ma",
+  "asset_name": "Mixtures & Alligations",
   "teacher": "Ravi Prakash Sir",
-  "data": [
+  "asset_data": [
     {
       "id": "01ma1",
       "sno": 1,

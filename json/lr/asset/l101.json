@@ -1,67 +1,67 @@
 {
-  "id": "l101",
-  "category": "Arithmetic",
-  "data": [
+  "reso_id": "l101",
+  "reso_name": "Arithmetic",
+  "reso_data": [
     {
-      "id": "01sm",
-      "type" : "arithmetic",
-      "category": "Speed Math",
+      "asset_id": "01sm",
+      "asset_type" : "arithmetic",
+      "asset_name": "Speed Math",
       "sno": 1,
       "count": 6
     },
     {
-      "id": "01av",
-      "type" : "arithmetic",
-      "category": "Averages",
+      "asset_id": "01av",
+      "asset_type" : "arithmetic",
+      "asset_name": "Averages",
       "sno": 2,
       "count": 4
     },
     {
-      "id": "01rp",
-      "type" : "arithmetic",
-      "category": "Ratio & Proportion",
+      "asset_id": "01rp",
+      "asset_type" : "arithmetic",
+      "asset_name": "Ratio & Proportion",
       "sno": 3,
       "count": 8
     },
     {
-      "id": "01ma",
-      "type" : "arithmetic",
-      "category": "Mixtures & Alligations",
+      "asset_id": "01ma",
+      "asset_type" : "arithmetic",
+      "asset_name": "Mixtures & Alligations",
       "sno": 4,
       "count": 6
     },
     {
-      "id": "01pl",
-      "type" : "arithmetic",
-      "category": "Profit, Loss & Discount",
+      "asset_id": "01pl",
+      "asset_type" : "arithmetic",
+      "asset_name": "Profit, Loss & Discount",
       "sno": 5,
       "count": 0
     },
     {
-      "id": "01sc",
-      "type" : "arithmetic",
-      "category": "Simple & Compound Interest",
+      "asset_id": "01sc",
+      "asset_type" : "arithmetic",
+      "asset_name": "Simple & Compound Interest",
       "sno": 6,
       "count": 0
     },
     {
-      "id": "01tw",
-      "type" : "arithmetic",
-      "category": "Time & Work",
+      "asset_id": "01tw",
+      "asset_type" : "arithmetic",
+      "asset_name": "Time & Work",
       "sno": 7,
       "count": 0
     },
     {
-      "id": "01td",
-      "type" : "arithmetic",
-      "category": "Time, Speed & Distance",
+      "asset_id": "01td",
+      "asset_type" : "arithmetic",
+      "asset_name": "Time, Speed & Distance",
       "sno": 8,
       "count": 0
     },
     {
-      "id": "01lc",
-      "type" : "arithmetic",
-      "category": "Linear & Circular Tracks",
+      "asset_id": "01lc",
+      "asset_type" : "arithmetic",
+      "asset_name": "Linear & Circular Tracks",
       "sno": 9,
       "count": 0
     }

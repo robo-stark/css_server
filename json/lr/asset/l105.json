@@ -1,60 +1,60 @@
 {
-  "id": "l105",
-  "category": "Numbers",
-  "data": [
+  "reso_id": "l105",
+  "reso_name": "Numbers",
+  "reso_data": [
     {
-      "id": "05bn",
-      "type" : "numbers",
-      "category": "Basic Numbers",
+      "asset_id": "05bn",
+      "asset_type" : "numbers",
+      "asset_name": "Basic Numbers",
       "sno": 1,
       "count": 0
     },
     {
-      "id": "05fs",
-      "type" : "numbers",
-      "category": "Factors",
+      "asset_id": "05fs",
+      "asset_type" : "numbers",
+      "asset_name": "Factors",
       "sno": 2,
       "count": 0
     },
     {
-      "id": "05ft",
-      "type" : "numbers",
-      "category": "Factorial",
+      "asset_id": "05ft",
+      "asset_type" : "numbers",
+      "asset_name": "Factorial",
       "sno": 3,
       "count": 0
     },
     {
-      "id": "05hl",
-      "type" : "numbers",
-      "category": "HCF & LCM",
+      "asset_id": "05hl",
+      "asset_type" : "numbers",
+      "asset_name": "HCF & LCM",
       "sno": 4,
       "count": 0
     },
     {
-      "id": "05dv",
-      "type" : "numbers",
-      "category": "Divisibility",
+      "asset_id": "05dv",
+      "asset_type" : "numbers",
+      "asset_name": "Divisibility",
       "sno": 5,
       "count": 0
     },
     {
-      "id": "05rd",
-      "type" : "numbers",
-      "category": "Remainder",
+      "asset_id": "05rd",
+      "asset_type" : "numbers",
+      "asset_name": "Remainder",
       "sno": 6,
       "count": 0
     },
     {
-      "id": "05bs",
-      "type" : "numbers",
-      "category": "Base System",
+      "asset_id": "05bs",
+      "asset_type" : "numbers",
+      "asset_name": "Base System",
       "sno": 7,
       "count": 0
     },
     {
-      "id": "05cd",
-      "type" : "numbers",
-      "category": "Calendars",
+      "asset_id": "05cd",
+      "asset_type" : "numbers",
+      "asset_name": "Calendars",
       "sno": 8,
       "count": 0
     }

@@ -1,18 +1,18 @@
 {
-  "id": "m102",
-  "category": "Complete Mocks",
-  "data": [
+  "reso_id": "m102",
+  "reso_name": "Complete Mocks",
+  "reso_data": [
     {
-      "id": "02m01",
-      "type" : "mocks",
-      "category": "Mock I",
+      "asset_id": "02m01",
+      "asset_type" : "mocks",
+      "asset_name": "Mock I",
       "sno": 1,
       "count": 0
     },
     {
-      "id": "02m02",
-      "type" : "mocks",
-      "category": "Mock II",
+      "asset_id": "02m02",
+      "asset_type" : "mocks",
+      "asset_name": "Mock II",
       "sno": 2,
       "count": 0
     }

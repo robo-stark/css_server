@@ -1,39 +1,39 @@
 {
-  "id": "l103",
-  "category": "Modern Math",
-  "data": [
+  "reso_id": "l103",
+  "reso_name": "Modern Math",
+  "reso_data": [
     {
-      "id": "03lg",
-      "type" : "mmath",
-      "category": "Logarithm",
+      "asset_id": "03lg",
+      "asset_type" : "mmath",
+      "asset_name": "Logarithm",
       "sno": 1,
       "count": 0
     },
     {
-      "id": "03fc",
-      "type" : "mmath",
-      "category": "Functions",
+      "asset_id": "03fc",
+      "asset_type" : "mmath",
+      "asset_name": "Functions",
       "sno": 2,
       "count": 0
     },
     {
-      "id": "03pb",
-      "type" : "mmath",
-      "category": "Probability",
+      "asset_id": "03pb",
+      "asset_type" : "mmath",
+      "asset_name": "Probability",
       "sno": 3,
       "count": 0
     },
     {
-      "id": "03ss",
-      "type" : "mmath",
-      "category": "Statistics",
+      "asset_id": "03ss",
+      "asset_type" : "mmath",
+      "asset_name": "Statistics",
       "sno": 4,
       "count": 0
     },
     {
-      "id": "03pc",
-      "type" : "mmath",
-      "category": "Permutations & Combinations",
+      "asset_id": "03pc",
+      "asset_type" : "mmath",
+      "asset_name": "Permutations & Combinations",
       "sno": 5,
       "count": 0
     }

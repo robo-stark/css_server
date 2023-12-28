@@ -1,8 +1,8 @@
 {
-  "id": "01pl",
-  "category": "Profit, Loss & Discount",
+  "asset_id": "01pl",
+  "asset_name": "Profit, Loss & Discount",
   "teacher": "Ravi Prakash Sir",
-  "data": [
+  "asset_data": [
     {
       "id": "01pl1",
       "sno": 1,

@@ -3,15 +3,15 @@
   "name": "Full Mocks",
   "list": [
     {
-      "id": "m101",
-      "type" : "mr",
-      "category": "Previous Year Mocks",
+      "reso_id": "m101",
+      "reso_type" : "mr",
+      "reso_name": "Previous Year Mocks",
       "sno": 1
     },
     {
-      "id": "m102",
-      "type" : "mr",
-      "category": "Complete Mocks",
+      "reso_id": "m102",
+      "reso_type" : "mr",
+      "reso_name": "Complete Mocks",
       "sno": 2
     }
   ]

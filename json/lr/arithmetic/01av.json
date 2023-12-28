@@ -1,8 +1,8 @@
 {
-  "id": "01av",
-  "category": "Average",
+  "asset_id": "01av",
+  "asset_name": "Average",
   "teacher": "Ravi Prakash Sir",
-  "data": [
+  "asset_data": [
     {
       "id": "01av1",
       "sno": 1,

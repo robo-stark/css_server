@@ -13,10 +13,10 @@ const getHomeData = async() =>{
 }
 
 
-const getResource = async(subId) => {
+const getResource = async(resoId) => {
 	try{
 
-		const m = await import('../../json/reso/' + subId+".json", {
+		const m = await import('../../json/reso/' + resoId+".json", {
 			assert: { type: 'json' }
 		});
 		
@@ -33,9 +33,9 @@ const getResource = async(subId) => {
 const getAsset = async(data) => {
 	try{
 
-		const {type, subId} = data;
+		const {resoType, resoId} = data;
 
-		const m = await import('../../json/'+type+'/asset/'+subId+".json", {
+		const m = await import('../../json/'+resoType+'/asset/'+resoId+".json", {
 			assert: { type: 'json' }
 		});
 		
@@ -50,9 +50,9 @@ const getAsset = async(data) => {
 const getLearningResource = async(data) => {
 	try{
 
-		const {userId, type, subId} = data;
+		const {userId, assetType, assetId} = data;
 
-		const m = await import('../../json/lr/'+type+'/' + subId+".json", {
+		let m = await import('../../json/lr/'+assetType+'/' + assetId+".json", {
 			assert: { type: 'json' }
 		});
 		
@@ -69,15 +69,16 @@ const getLearningResource = async(data) => {
 const getPracticeResource = async(data) => {
 	try{
 
-		const {userId, type, subId} = data;
+		const {userId, assetType, assetId} = data;
 
-		let m = await import('../../json/pr/'+type+'/'+subId+".json", {
+		let m = await import('../../json/pr/'+assetType+'/' + assetId+".json", {
 			assert: { type: 'json' }
 		});
+
 		m = m.default;
 
 		const user = await User.findOne({_id : userId});
-		const userData = user.practiceQuestions.find((ele) => ele._id === subId );
+		const userData = user.practiceQuestions.find((ele) => ele._id === assetId );
 		if (userData != null){
 
 			const queList = userData.list
@@ -103,11 +104,12 @@ const getPracticeResource = async(data) => {
 const getMockResource = async(data) => {
 	try{
 
-		const { userId, type, subId, dataType} = data;
+		const {userId, assetType, assetId, dataType} = data;
 
-		let m = await import('../../json/mr/'+type+'/'+subId+".json", {
+		let m = await import('../../json/mr/'+assetType+'/' + assetId+".json", {
 			assert: { type: 'json' }
 		});
+
 		m = m.default;
 		
 		if (dataType === "new") { return m; }
@@ -116,7 +118,7 @@ const getMockResource = async(data) => {
      
 	      // make a report here why it went wrong ->
 	      const user = await User.findOne({_id : userId});
-	      const userData = user.attemptedQuestions.find((ele) => ele._id === subId );
+	      const userData = user.attemptedQuestions.find((ele) => ele._id === assetId );
 
 	     	if (userData != null) {
 

@@ -67,19 +67,19 @@ const createNewUser = async (data) => {
 const updatePraticeData = async (data) => {
 	try{
 
-		const { userId, type, subId } = data;
+		const {userId, asset_id, questionId} = data;
 
-		const exists = await User.countDocuments({_id : userId,"practiceQuestions._id" : type})
+		const exists = await User.countDocuments({_id : userId,"practiceQuestions._id" : asset_id})
 		if (exists) {
 			await User.updateOne({_id : userId}, 
-				{ $addToSet : { "practiceQuestions.$[e1].list" : {_id : subId } } },
-				{arrayFilters : [{"e1._id" : type}]} )
+				{ $addToSet : { "practiceQuestions.$[e1].list" : {_id : questionId } } },
+				{arrayFilters : [{"e1._id" : asset_id}]} )
 		}else{
 			await User.updateOne(
 				{ _id : userId },
 				{ $addToSet : {"practiceQuestions" : [{
-						_id : type,
-						list : { _id : subId }
+						_id : asset_id,
+						list : { _id : questionId }
 					}]
 				} },
 			)
@@ -99,14 +99,14 @@ const updatePraticeData = async (data) => {
 const updateQuestionAttemptData = async (data) => {
 	try{
 
-		const { userId, type, questionData } = data;
+		const {userId, asset_id, questionData} = data;
 
-		const exists = await User.countDocuments({_id : userId, "attemptedQuestions._id" : type})
+		const exists = await User.countDocuments({_id : userId, "attemptedQuestions._id" : asset_id})
 		if (exists) {
 			
 			await User.updateOne({_id : userId}, 
 				{ $set : { "attemptedQuestions.$[e1].queData" : questionData } },
-				{arrayFilters : [{"e1._id" : type}]} )
+				{arrayFilters : [{"e1._id" : asset_id}]} )
 
 		}else{
 			
@@ -114,7 +114,7 @@ const updateQuestionAttemptData = async (data) => {
 				{ _id : userId },
 				{ $addToSet : {
 					"attemptedQuestions" : [{
-						_id : type,
+						_id : asset_id,
 						queData : questionData
 					}]
 				} },
