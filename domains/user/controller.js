@@ -88,7 +88,7 @@ const updatePraticeData = async (data) => {
 		return {
 			 "status": "success",
 			  "data": null,
-			  "message": "Added to database"
+			  "message": "updated"
 			}
 
 	}catch(err) {
@@ -124,7 +124,7 @@ const updateQuestionAttemptData = async (data) => {
 		return {
 			 "status": "success",
 			  "data": null,
-			  "message": "Added to database"
+			  "message": "updated"
 			}
 
 	}catch(err) {
