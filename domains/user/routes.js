@@ -8,13 +8,13 @@ import verifyToken from "../../middleware/auth.js";
 userRoutes.post("/update/practice", async (req, res) => {
 	try {
 
-		let { userId, asset_id, questionId } = req.body;
+		let { userId, assetId, questionId } = req.body;
 	
-		if (!(userId && questionId && asset_id)) {
+		if (!(userId && questionId && assetId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const updateResult = await updatePraticeData({userId, asset_id, questionId});
+		const updateResult = await updatePraticeData({userId, assetId, questionId});
 		res.status(200).json(updateResult);
 	
 
@@ -31,13 +31,13 @@ userRoutes.post("/update/practice", async (req, res) => {
 userRoutes.post("/update/attempt", async (req, res) => {
 	try {
 
-		let { userId, asset_id, questionData } = req.body;
+		let { userId, assetId, questionData } = req.body;
 	
-		if (!(userId && questionData && asset_id)) {
+		if (!(userId && questionData && assetId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const updateResult = await updateQuestionAttemptData({userId, asset_id, questionData});
+		const updateResult = await updateQuestionAttemptData({userId, assetId, questionData});
 		res.status(200).json(updateResult);
 	
 
