@@ -6,12 +6,14 @@
       "reso_id": "m201",
       "reso_type" : "mr",
       "reso_name": "Quants",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_quant.png",
       "sno": 1
     },
     {
       "reso_id": "m202",
       "reso_type" : "mr",
       "reso_name": "Dilr",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_data.png",
       "sno": 2
     }
   ]

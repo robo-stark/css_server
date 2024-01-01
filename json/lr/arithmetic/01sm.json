@@ -7,6 +7,7 @@
       "id": "01sm1",
       "sno": 1,
       "watched": false,
+      "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "name": "Speed Math 1",
       "link": "https://www.youtube.com/watch?v=VT9-jeEmlJ8"
     },
@@ -15,6 +16,7 @@
       "sno": 2,
       "watched": false,
       "name": "Speed Math 2",
+      "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "link": "https://www.youtube.com/watch?v=45rr2MJmXfA"
     },
     {
@@ -22,6 +24,7 @@
       "sno": 3,
       "watched": false,
       "name": "Speed Math 3",
+      "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "link": "https://www.youtube.com/watch?v=sMiFeodSLPU"
     },
     {
@@ -29,6 +32,7 @@
       "sno": 4,
       "watched": false,
       "name": "Speed Math 4",
+      "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "link": "https://www.youtube.com/watch?v=y6IWvihLWws"
     },
     {
@@ -36,6 +40,7 @@
       "sno": 5,
       "watched": false,
       "name": "Speed Math 5",
+      "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "link": "https://www.youtube.com/watch?v=CikoluNIjFY"
     },
     {
@@ -43,6 +48,7 @@
       "sno": 6,
       "watched": false,
       "name": "Speed Math 6",
+      "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "link": "https://www.youtube.com/watch?v=H8ItErX0044"
     }
   ]

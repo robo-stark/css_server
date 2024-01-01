@@ -6,12 +6,14 @@
       "reso_id": "l201",
       "reso_type" : "lr",
       "reso_name": "Logical Reasoning",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_logical.png",
       "sno": 1
     },
     {
       "reso_id": "l202",
       "reso_type" : "lr",
       "reso_name": "Data Interpretation",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_data.png",
       "sno": 2
     }
   ]

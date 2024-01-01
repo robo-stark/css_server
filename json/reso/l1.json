@@ -6,29 +6,34 @@
       "reso_id": "l101",
       "reso_type" : "lr",
       "reso_name": "Arithmetic",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_arithmetic.png",
       "sno": 1
     },
     {
       "reso_id": "l102",
       "reso_type" : "lr",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_algebra.png",
       "reso_name": "Algebra",
       "sno": 2
     },
     {
       "reso_id": "l103",
       "reso_type" : "lr",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_numbers.png",
       "reso_name": "Numbers",
       "sno": 3
     },
     {
       "reso_id": "l104",
       "reso_type" : "lr",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_geo.png",
       "reso_name": "Geometry",
       "sno": 4
     },
     {
       "reso_id": "l105",
       "reso_type" : "lr",
+      "reso_image" : "https://ivacusea.sirv.com/cssicons/ic_modern.png",
       "reso_name": "Modern Math",
       "sno": 5
     }
