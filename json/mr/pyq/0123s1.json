@@ -15,6 +15,7 @@
           "option_c": "East and south were more important for religious reasons for some civilisations",
           "option_d": "East was considered by some civilisations to be a more positive direction",
           "answer": 2,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -29,6 +30,7 @@
           "option_c": "It critiques a methodology used to create maps.",
           "option_d": "It explores some myths about maps.",
           "answer": 2,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -44,6 +46,7 @@
           "option_d": "navigated with the help of early maps.",
           "answer": 3,
           "solution": "",
+          "isMath" : false,
           "user_answer" : -1,
           "questionType": "mcq"
         },
@@ -58,6 +61,7 @@
           "option_d": "north was considered the most desirable direction.",
           "answer": 2,
           "solution": "",
+          "isMath" : false,
           "user_answer" : -1,
           "questionType": "mcq"
         },
@@ -71,6 +75,7 @@
           "option_c": "early Chinese maps",
           "option_d": "early Christian maps",
           "answer": 1,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -85,6 +90,7 @@
           "option_c": "The biggest contributory factor was the influence of Christian maps",
           "option_d": "The biggest contributory factor is not stated in the passage",
           "answer": 4,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -100,6 +106,7 @@
           "option_d": "are usually eroded by expenditure incurred by the host city.",
           "answer": 3,
           "solution": "",
+          "isMath" : false,
           "user_answer" : -1,
           "questionType": "mcq"
         },
@@ -114,6 +121,7 @@
           "option_d": "they become outdated having being built with little planning and under time pressure",
           "answer": 1,
           "solution": "",
+          "isMath" : false,
           "user_answer" : -1,
           "questionType": "mcq"
         },
@@ -128,6 +136,7 @@
           "option_d": "the influx of visitors during the Games places a huge strain on the urban infrastructure.",
           "answer": 4,
           "solution": "",
+          "isMath" : false,
           "user_answer" : -1,
           "questionType": "mcq"
         }
@@ -147,6 +156,7 @@
           "option_c": "2",
           "option_d": "8",
           "answer": 4,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -161,6 +171,7 @@
           "option_c": "B",
           "option_d": "A",
           "answer": 1,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -175,6 +186,7 @@
           "option_c": "1,5,6,12",
           "option_d": "1,2,8,12",
           "answer": 1,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -189,6 +201,7 @@
           "option_c": "There are at least four shelves between items B and C.",
           "option_d": "All candies are kept before biscuits.",
           "answer": 3,
+          "isMath" : false,
           "solution": "",
           "user_answer" : -1,
           "questionType": "mcq"
@@ -206,6 +219,7 @@
           "question": "",
           "option_a": "0",
           "option_b": "1",
+          "isMath" : true,
           "option_c": "-1",
           "option_d": "abc",
           "answer": 2,
@@ -218,6 +232,7 @@
           "questionId": "py231q02",
           "question_para": "If one root of $x^2+px+12$ = 0 is 4, while the equation $x^2+px+q=0$ has equal roots, then the value of q is",
           "question": "",
+          "isMath" : true,
           "option_a": "49/4",
           "option_b": "4/49",
           "option_c": "4",
@@ -232,6 +247,7 @@
           "questionId": "py231q03",
           "question_para": "Once I had been to the post-office to buy stamps of five rupees, two rupees and one rupee. I paid the clerk Rs 20, and since he did not have change, he gave me three more stamps of one rupee. If the number of stamps of each type that I had ordered initially was more than one, what was the total number of stamps that I bought?",
           "question": "",
+           "isMath" : true,
           "option_a": "10",
           "option_b": "9",
           "option_c": "12",
@@ -247,6 +263,7 @@
           "question_para": "Given the quadratic equation $x^2−(A−3)x−(A−7)$, for what value of A will the sum of the squares of the roots be zero?",
           "question": "",
           "option_a": "-2",
+           "isMath" : true,
           "option_b": "6",
           "option_c": "3",
           "option_d": "None of these",
@@ -260,6 +277,7 @@
           "questionId": "py231q05",
           "question_para": "Which of the following values of x do not satisfy the inequality $(x^2 − 3x + 2 > 0)$ at all?",
           "question": "",
+           "isMath" : true,
           "option_a": "1 ≤ x ≤ 2",
           "option_b": "-1 ≥ x ≥ -2",
           "option_c": "0 ≤ x ≤ 2",
