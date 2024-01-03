@@ -6,13 +6,13 @@
       "attempted": false,
       "sno": 1,
       "questionId": "rp01",
-      "question": "Find x, y, z  $\\in$  where:$x^2 + y^2 = z^2$ ayo is that $\\frac {2}{3}$",
+      "question": "Find x, y, z  $$\\in$$  where:$$x^2 + y^2 = z^2$$ ayo is that $$\\frac {2}{3}$$",
       "option_a": "27/8",
       "option_b": "3/8",
       "option_c": "3/4",
       "option_d": "27/4",
       "answer": 2,
-      "solution": "$$c = \\pm\\sqrt{a^2 + b^2}$$",
+      "solution": "\\documentclass{article}\n\\begin{document}\nThis paragraph contains no information\nand its purpose is to provide an example on how to start a new paragraph.\nAs you can see,\nsingle line\nbreak in the code\nacts as a space in text.\nHowever, leaving an empty line starts a new paragraph.\n\\end{document}",
       "questionType": "mcq"
     },
     {
