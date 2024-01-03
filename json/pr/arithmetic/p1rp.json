@@ -12,7 +12,7 @@
       "option_c": "3/4",
       "option_d": "27/4",
       "answer": 2,
-      "solution": "\\documentclass{article}\n\\begin{document}\nThis paragraph contains no information\nand its purpose is to provide an example on how to start a new paragraph.\nAs you can see,\nsingle line\nbreak in the code\nacts as a space in text.\nHowever, leaving an empty line starts a new paragraph.\n\\end{document}",
+      "solution": "\\documentclass{article}\n\\begin{document}\nThe mass-energy equivalence is described by the famous equation\n\n\\[E=mc^2\\]\n\ndiscovered in 1905 by Albert Einstein. \nIn natural units ($c$ = 1), the formula expresses the identity\n\n\\begin{equation}\nE=m\n\\end{equation}\n\\end{document}",
       "questionType": "mcq"
     },
     {
