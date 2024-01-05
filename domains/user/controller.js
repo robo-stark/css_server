@@ -80,24 +80,18 @@ const updatePassword = async (data) => {
 
 		const hashedPassword = await hashData(password);
 
-		if (userData.canChangePassword) {
-			await User.updateOne({email : email},
+		await User.updateOne({email : email},
 				{$set : {
 					password : hashedPassword, 
 					canChangePassword : false
 				}
 			});
 
-			return {
-			  "status": "success",
-			  "data": null,
-			  "message": "Password Changed"
-			};
-
-		}else{
-			throw Error("Try again later!!")
-			///this shouldn't happen
-		}
+		return {
+		  "status": "success",
+		  "data": null,
+		  "message": "Password Changed"
+		};
 
 	}catch(err) {
 		throw Error(err);
