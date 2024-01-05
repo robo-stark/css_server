@@ -1,6 +1,6 @@
 import express from "express";
 const userRoutes = express.Router();
-import { createNewUser , authenticateUser, updatePraticeData, updateQuestionAttemptData } from './controller.js';
+import { createNewUser , authenticateUser, updatePraticeData, updateQuestionAttemptData, updatePassword } from './controller.js';
 import verifyToken from "../../middleware/auth.js";
 
 
@@ -50,6 +50,21 @@ userRoutes.post("/update/attempt", async (req, res) => {
 	}
 });
 
+
+userRoutes.post("/update/password", async (req, res) => {
+	try {
+		let { email, password } = req.body;
+
+		const updateStatus = await updatePassword({ email, password });
+		res.status(200).json(updateStatus);
+	}catch(err) {
+		res.status(400).send({
+			  "status": "failed",
+			  "data": null,
+			  "message": err.message
+		});
+	}
+})
 
 
 //Login

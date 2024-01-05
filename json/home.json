@@ -5,11 +5,13 @@
     "resourceData": [
       {
         "id": "l1",
-        "name": "Quants"
+        "name": "Quants",
+        "image" : "https://ivacusea.sirv.com/cssicons/ic_quant.png"
       },
       {
         "id": "l2",
-        "name": "LRDI"
+        "name": "LRDI",
+        "image" : "https://ivacusea.sirv.com/cssicons/ic_logical.png"
       }
     ]
   },
@@ -19,11 +21,13 @@
     "resourceData": [
       {
         "id": "p1",
-        "name": "Quants"
+        "name": "Quants",
+        "image" : "https://ivacusea.sirv.com/cssicons/ic_quant.png"
       },
       {
         "id": "p2",
-        "name": "LRDI"
+        "name": "LRDI",
+        "image" : "https://ivacusea.sirv.com/cssicons/ic_logical.png"
       }
     ]
   },
@@ -33,11 +37,13 @@
     "resourceData": [
       {
         "id": "m1",
-        "name": "Full Mocks"
+        "name": "Full Mocks",
+        "image" : "https://ivacusea.sirv.com/cssicons/ic_mock.png"
       },
       {
         "id": "m2",
-        "name": "Sectional Mocks"
+        "name": "Sectional Mocks",
+        "image" : "https://ivacusea.sirv.com/cssicons/ic_mock.png"
       }
     ]
   }

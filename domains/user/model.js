@@ -9,6 +9,8 @@ const UserSchema = new Schema({
 		required : true
 	},
 	password : String,
+	canChangePassword : {type : Boolean, default : false},
+	isVerified : Boolean,
 	token : String,
 	attemptedQuestions : [{ 
 			_id : {type : String} ,

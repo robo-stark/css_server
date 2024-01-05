@@ -64,6 +64,47 @@ const createNewUser = async (data) => {
 };
 
 
+const updatePassword = async (data) => {
+	try {
+		const { email, password } = data;
+
+		const userData = await User.findOne({ email });
+
+		if (!userData) {
+			throw Error("No such user exists");
+		}
+
+		if (password.length < 6){
+			throw Error("Password should be greater than 6 characters");
+		}
+
+		const hashedPassword = await hashData(password);
+
+		if (userData.canChangePassword) {
+			await User.updateOne({email : email},
+				{$set : {
+					password : hashedPassword, 
+					canChangePassword : false
+				}
+			});
+
+			return {
+			  "status": "success",
+			  "data": null,
+			  "message": "Password Changed"
+			};
+
+		}else{
+			throw Error("Try again later!!")
+			///this shouldn't happen
+		}
+
+	}catch(err) {
+		throw Error(err);
+	}
+};
+
+
 const updatePraticeData = async (data) => {
 	try{
 
@@ -132,4 +173,4 @@ const updateQuestionAttemptData = async (data) => {
 	}
 };
 
-export { createNewUser , authenticateUser, updatePraticeData, updateQuestionAttemptData };
+export { createNewUser , authenticateUser, updatePraticeData, updateQuestionAttemptData, updatePassword };
