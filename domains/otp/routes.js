@@ -1,6 +1,6 @@
 import express from "express";
-import User from '../user/model.js'; 
 const otpRoutes = express.Router();
+import { updatePassword } from "../user/controller.js";
 import { sendOTP, verifyOTP, deleteOTP, forgotPasswordOTP } from './controller.js';
 
 
@@ -32,21 +32,18 @@ otpRoutes.post("/verify/email", async (req, res) => {
 
 otpRoutes.post("/verify/change", async (req, res) => {
 	try {
-		let { email, otp } = req.body;
+		let { email, otp, password } = req.body;
+
+		if ( password.length < 6 ) {
+			throw Error("Password should be greater than 6 characters");
+		}
 
 		const validOTP = await verifyOTP({ email, otp });
 
-		if (validOTP) {
-			await User.updateOne({email : email},
-				{$set : { canChangePassword : true}
-			});
 
-			res.status(200).json({
-			"status": "success",
-			"data": null,
-			"message": "otp validated"
-		});
-			
+		if (validOTP) {
+			const updateStatus = await updatePassword({ email, password });
+			res.status(200).json(updateStatus);		
 		}else{
 			throw Error("failed to verify otp try again later"); //-> log here
 		}
