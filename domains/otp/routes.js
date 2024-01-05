@@ -30,7 +30,7 @@ otpRoutes.post("/verify/email", async (req, res) => {
 });
 
 
-otpRoutes.post("/verify/change", async (req, res) => {
+otpRoutes.post("/change", async (req, res) => {
 	try {
 		let { email, otp, password } = req.body;
 
