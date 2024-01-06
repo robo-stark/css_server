@@ -83,7 +83,6 @@ const updatePassword = async (data) => {
 		await User.updateOne({email : email},
 				{$set : {
 					password : hashedPassword, 
-					canChangePassword : false
 				}
 			});
 
