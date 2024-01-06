@@ -35,7 +35,7 @@ const getAsset = async(data) => {
 
 		const {userId, resoType, resoId} = data;
 
-		const m = await import('../../json/'+resoType+'/asset/'+resoId+".json", {
+		let m = await import('../../json/'+resoType+'/asset/'+resoId+".json", {
 			assert: { type: 'json' }
 		});
 		
