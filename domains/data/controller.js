@@ -146,10 +146,11 @@ const getMockResource = async(data) => {
 		        const queLrdi = userData.queData.que_lrdi
 		        const queQuants = userData.queData.que_quants
 
+		        console.log(m);
 		        
-		        const varcQList = m.que_varc[0].question_data;
-		        const lrdiQList = m.que_lrdi[0].question_data;
-		        const quantsQList = m.que_quants[0].question_data;
+		        const varcQList = m.que_varc.question_data;
+		        const lrdiQList = m.que_lrdi.question_data;
+		        const quantsQList = m.que_quants.question_data;
 		      
 		        if ( varcQList.length != queVarc.length ) {
 		          throw Error("Question Data Error")

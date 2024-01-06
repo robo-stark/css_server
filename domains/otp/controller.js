@@ -11,6 +11,7 @@ const deleteOTP = async(email) => {
 		await OTP.deleteOne({email});
 	}catch(err){
 		throw err;
+		console.log(err);
 	}
 };
 
@@ -38,6 +39,7 @@ const verifyOTP = async({ email, otp }) => {
 
 	}catch(err) {
 		throw err;
+		console.log(err);
 	}
 };
 
@@ -91,6 +93,7 @@ const forgotPasswordOTP = async (email) => {
 
 	}catch(err){
 		throw err;
+		console.log(err);
 	}
 };
 
@@ -145,6 +148,7 @@ const sendOTP = async (email) => {
 
 	}catch(err){
 		throw err;
+		console.log(err);
 	}
 };
 

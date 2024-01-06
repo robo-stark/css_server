@@ -30,6 +30,7 @@ const authenticateUser = async (data) => {
 			}
 		return res;
 	}catch(err) {
+		console.log(err);
 		throw Error(err);
 	}
 
@@ -59,6 +60,7 @@ const createNewUser = async (data) => {
 			};
 
 	}catch(err) {
+		console.log(err);
 		throw Error(err);
 	}
 };
@@ -93,6 +95,7 @@ const updatePassword = async (data) => {
 		};
 
 	}catch(err) {
+		console.log(err);
 		throw Error(err);
 	}
 };
@@ -126,6 +129,7 @@ const updateMockAttempt = async (data) => {
 			}
 
 	}catch(err) {
+		console.log(err);
 		throw Error(err);
 	}
 };
@@ -156,8 +160,8 @@ const updatePraticeData = async (data) => {
 			  "data": null,
 			  "message": "updated"
 			}
-
 	}catch(err) {
+		console.log(err);
 		throw Error(err);
 	}
 };
@@ -197,6 +201,7 @@ const updateQuestionAttemptData = async (data) => {
 			}
 
 	}catch(err) {
+		console.log(err);
 		throw Error(err);
 	}
 };
