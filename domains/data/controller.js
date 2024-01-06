@@ -195,6 +195,7 @@ const getMockResource = async(data) => {
     	else { throw Error("Not Found") }
 
 	}catch(err){
+		console.log(err);
 		throw err;
 	}
 }
