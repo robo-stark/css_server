@@ -33,13 +33,32 @@ const getResource = async(resoId) => {
 const getAsset = async(data) => {
 	try{
 
-		const {resoType, resoId} = data;
+		const {userId, resoType, resoId} = data;
 
 		const m = await import('../../json/'+resoType+'/asset/'+resoId+".json", {
 			assert: { type: 'json' }
 		});
 		
-		return m.default;
+		m = m.default;
+
+		if (resoType === "mr") {
+			const user = await User.findOne({_id : userId});
+			const userData = user.attemptedMocks.find((ele) => ele._id === resoId );
+			if (userData != null){
+
+				const mockList = userData.list
+				mockList.forEach((ele) => {
+					for (var i = 0; i < m.reso_data.length; i++){
+						if (m.reso_data[i].asset_id === ele._id) {
+							m.reso_data[i].attempted = true;
+							break;
+						}
+					}
+				})
+			}
+		}
+
+		return m;
 
 	}catch(err){
 		console.log(err);

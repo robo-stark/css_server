@@ -31,13 +31,13 @@ userRoutes.post("/update/practice", async (req, res) => {
 userRoutes.post("/update/attempt", async (req, res) => {
 	try {
 
-		let { userId, assetId, questionData } = req.body;
+		let { userId, assetId, questionData, resoId } = req.body;
 	
-		if (!(userId && questionData && assetId)) {
+		if (!(userId && questionData && assetId && resoId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const updateResult = await updateQuestionAttemptData({userId, assetId, questionData});
+		const updateResult = await updateQuestionAttemptData({userId, assetId, questionData, resoId});
 		res.status(200).json(updateResult);
 	
 
@@ -54,6 +54,10 @@ userRoutes.post("/update/attempt", async (req, res) => {
 userRoutes.post("/update/password", async (req, res) => {
 	try {
 		let { email, password } = req.body;
+
+		if (!(email && password)) {
+			throw Error("Empty fields received!");
+		}
 
 		const updateStatus = await updatePassword({ email, password });
 		res.status(200).json(updateStatus);

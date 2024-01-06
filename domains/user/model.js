@@ -9,7 +9,6 @@ const UserSchema = new Schema({
 		required : true
 	},
 	password : String,
-	canChangePassword : {type : Boolean, default : false},
 	isVerified : Boolean,
 	token : String,
 	attemptedQuestions : [{ 
@@ -22,6 +21,10 @@ const UserSchema = new Schema({
 			
 		}],
 	practiceQuestions : [{ 
+			_id : {type : String} ,
+			list : [ {_id : {type : String} }]
+		}],
+	attemptedMocks : [{ 
 			_id : {type : String} ,
 			list : [ {_id : {type : String} }]
 		}]
