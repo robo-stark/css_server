@@ -18,7 +18,7 @@ dataRoutes.get("/", async (req, res) => {
 });
 
 
-dataRoutes.get("/:id", async (req, res) => {
+dataRoutes.get("/reso/:id", async (req, res) => {
 	try {
 
 		let id  = req.params.id;
@@ -40,17 +40,16 @@ dataRoutes.get("/:id", async (req, res) => {
 });
 
 
-dataRoutes.get("/:resoType/:resoId", async (req, res) => {
+dataRoutes.post("/asset", async (req, res) => {
 	try {
 
-		let resoType = req.params.resoType;
-		let resoId = req.params.resoId;
-		
-		if (!(resoType && resoId)) {
+		let {userId, resoType, resoId} = req.body
+
+		if (!(resoType && resoId && userId)) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getAsset({resoType, resoId});
+		const jsonData = await getAsset({userId, resoType, resoId});
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
