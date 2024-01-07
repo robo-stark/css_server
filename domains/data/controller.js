@@ -16,11 +16,17 @@ const getHomeData = async() =>{
 const getResource = async(resoId) => {
 	try{
 
-		const m = await import('../../json/reso/' + resoId+".json", {
+		let m = await import('../../json/reso/' + resoId+".json", {
 			assert: { type: 'json' }
 		});
 		
-		return m.default;
+		m = m.default;
+		const date = new Date()
+		m.date = date.getTime();
+
+		//console.log(m);
+
+		return m;
 			  
 
 	}catch(err){
