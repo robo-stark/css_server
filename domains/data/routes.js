@@ -4,7 +4,7 @@ import { getHomeData, getResources, getAttemptData, getMainData} from './control
 const dataRoutes = express.Router();
 
 
-dataRoutes.get("/home", async (req, res) => {
+dataRoutes.get("/", async (req, res) => {
 	try {
 		let jsonData = await getHomeData(); 
 		res.status(200).json(jsonData); 
@@ -20,7 +20,7 @@ dataRoutes.get("/home", async (req, res) => {
 
 // for fetching home screen data
 //{ "resourceId" : "lr", "userId" : "65781a49940763a83c7727f6" }
-dataRoutes.post('/main', async (req, res) =>{
+dataRoutes.post('/home', async (req, res) =>{
 	try {
 
 		const { resourceId, userId } = req.body;
