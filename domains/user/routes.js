@@ -99,11 +99,12 @@ userRoutes.post("/login", async (req, res) => {
 //Signup
 userRoutes.post("/signup", async (req, res) => {
 	try {
-		let { email, password } = req.body;
+		let { name, email, password } = req.body;
+		name = name.trim();
 		email = email.trim();
 		password = password.trim();
 
-		if (!(email && password)) {
+		if (!(email && password && name)) {
 			throw Error("Empty input fields!");
 		} else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
 			throw Error("Invalid email entered");
@@ -111,7 +112,7 @@ userRoutes.post("/signup", async (req, res) => {
 			throw Error("Password should be greater than 6 characters");
 		} else {
 			const newUser = await createNewUser({
-				email, password
+				name, email, password
 			});
 			res.status(200).json(newUser);
 		}

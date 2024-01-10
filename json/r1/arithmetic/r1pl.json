@@ -1,10 +1,10 @@
 {
-  "asset_id": "01pl",
+  "asset_id": "r1pl",
   "asset_name": "Profit, Loss & Discount",
   "teacher": "Ravi Prakash Sir",
   "asset_data": [
     {
-      "id": "01pl1",
+      "id": "r1pl1",
       "sno": 1,
       "watched": false,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
@@ -12,7 +12,7 @@
       "link": "https://www.youtube.com/watch?v=bigCbKeUPO4"
     },
     {
-      "id": "01pl2",
+      "id": "r1pl2",
       "sno": 2,
       "watched": false,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
@@ -20,7 +20,7 @@
       "link": "https://www.youtube.com/watch?v=3Q6V7qVGReo"
     },
     {
-      "id": "01pl3",
+      "id": "r1pl3",
       "sno": 3,
       "watched": false,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
@@ -28,7 +28,7 @@
       "link": "https://www.youtube.com/watch?v=xDU1mvVga_o"
     },
     {
-      "id": "01pl4",
+      "id": "r1pl4",
       "sno": 4,
       "watched": false,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
@@ -36,7 +36,7 @@
       "link": "https://www.youtube.com/watch?v=czMjyZAy6Io"
     },
     {
-      "id": "01pl4",
+      "id": "r1pl4",
       "sno": 4,
       "watched": false,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",

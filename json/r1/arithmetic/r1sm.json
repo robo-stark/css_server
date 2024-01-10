@@ -1,10 +1,10 @@
 {
-  "asset_id": "01sm",
+  "asset_id": "r1sm",
   "asset_name": "Speed Math",
   "teacher": "Ravi Prakash Sir",
   "asset_data": [
     {
-      "id": "01sm1",
+      "id": "r1sm1",
       "sno": 1,
       "watched": false,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
@@ -12,7 +12,7 @@
       "link": "https://www.youtube.com/watch?v=VT9-jeEmlJ8"
     },
     {
-      "id": "01sm2",
+      "id": "r1sm2",
       "sno": 2,
       "watched": false,
       "name": "Speed Math 2",
@@ -20,7 +20,7 @@
       "link": "https://www.youtube.com/watch?v=45rr2MJmXfA"
     },
     {
-      "id": "01sm3",
+      "id": "r1sm3",
       "sno": 3,
       "watched": false,
       "name": "Speed Math 3",
@@ -28,7 +28,7 @@
       "link": "https://www.youtube.com/watch?v=sMiFeodSLPU"
     },
     {
-      "id": "01sm4",
+      "id": "r1sm4",
       "sno": 4,
       "watched": false,
       "name": "Speed Math 4",
@@ -36,7 +36,7 @@
       "link": "https://www.youtube.com/watch?v=y6IWvihLWws"
     },
     {
-      "id": "01sm5",
+      "id": "r1sm5",
       "sno": 5,
       "watched": false,
       "name": "Speed Math 5",
@@ -44,7 +44,7 @@
       "link": "https://www.youtube.com/watch?v=CikoluNIjFY"
     },
     {
-      "id": "01sm6",
+      "id": "r1sm6",
       "sno": 6,
       "watched": false,
       "name": "Speed Math 6",

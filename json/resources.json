@@ -1,0 +1,53 @@
+[
+  {
+    "resourceId": "r1",
+    "resourceName": "Quantitative Aptitude",
+    "resourceData": [
+      {
+        "reso_id": "r101",
+        "reso_type": "r1",
+        "reso_name": "Arithmetic",
+        "reso_image": "https://ivacusea.sirv.com/cssicons/ic_arithmetic.png",
+        "isUnlocked" : true,
+        "sno": 1
+      },
+      {
+        "reso_id": "r102",
+        "reso_type": "r1",
+        "reso_name": "Algebra",
+        "reso_image": "https://ivacusea.sirv.com/cssicons/ic_algebra.png",
+        "isUnlocked" : true,
+        "sno": 2
+      },
+      {
+        "reso_id": "r103",
+        "reso_type": "r1",
+        "reso_name": "Modern Math",
+        "reso_image": "https://ivacusea.sirv.com/cssicons/ic_modern.png",
+        "isUnlocked" : true,
+        "sno": 3
+      },
+      {
+        "reso_id": "r104",
+        "reso_type": "r1",
+        "reso_name": "Geometry",
+        "reso_image": "https://ivacusea.sirv.com/cssicons/ic_geo.png",
+        "isUnlocked" : true,
+        "sno": 4
+      },
+      {
+        "reso_id": "r105",
+        "reso_type": "r1",
+        "reso_name": "Numbers",
+        "reso_image": "https://ivacusea.sirv.com/cssicons/ic_numbers.png",
+        "isUnlocked" : true,
+        "sno": 5
+      }
+    ]
+  },
+  {
+    "resourceId": "r2",
+    "resourceName": "Logical Reasoning &/nData Interpretation",
+    "resourceData": []
+  }
+]

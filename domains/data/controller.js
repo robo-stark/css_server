@@ -36,42 +36,6 @@ const getResource = async(resoId) => {
 }
 	
 
-const getAsset = async(data) => {
-	try{
-
-		const {userId, resoType, resoId} = data;
-
-		let m = await import('../../json/'+resoType+'/asset/'+resoId+".json", {
-			assert: { type: 'json' }
-		});
-		
-		m = m.default;
-
-		if (resoType === "mr") {
-			const user = await User.findOne({_id : userId});
-			const userData = user.attemptedMocks.find((ele) => ele._id === resoId );
-			if (userData != null){
-
-				const mockList = userData.list
-				mockList.forEach((ele) => {
-					for (var i = 0; i < m.reso_data.length; i++){
-						if (m.reso_data[i].asset_id === ele._id) {
-							m.reso_data[i].attempted = true;
-							break;
-						}
-					}
-				})
-			}
-		}
-
-		return m;
-
-	}catch(err){
-		console.log(err);
-		throw Error("Not Found");
-	}
-}
-
 const getLearningResource = async(data) => {
 	try{
 
@@ -126,88 +90,149 @@ const getPracticeResource = async(data) => {
 	}
 }
 
+///--------------------------All working---------------------------------------//
 
-const getMockResource = async(data) => {
+//POST api/v1/data/main
+const getMainData = async(data) => {
 	try{
 
-		const {userId, assetType, assetId, dataType} = data;
+		const { resourceId, userId } = data 
 
-		let m = await import('../../json/mr/'+assetType+'/' + assetId+".json", {
+		let path;
+
+		if (resourceId === "lr") { path = "resources" }
+		else if (resourceId === "qr") { path = "questions" }
+		else if (resourceId === "tr") { path = "tests" } 
+		else { throw Error("Not Found") }
+		
+		let m = await import('../../json/' + path+".json", {
+			assert: { type: 'json' }
+		});
+		
+		m = m.default;
+
+		if (resourceId === "tr") {
+			const user = await User.findOne({_id : userId});
+			const userData = user.attemptedMocks.find((ele) => ele._id === resourceId );
+			if (userData != null){
+
+				const mockList = userData.list
+				mockList.forEach((ele) => {
+					for (var i = 0; i < m.resourceData.length; i++){
+						if (m.resourceData[i].reso_id === ele._id) {
+							m.resourceData[i].attempted = true;
+							break;
+						}
+					}
+				})
+			}
+		}
+
+		//console.log(m);
+		return m;
+			  
+
+	}catch(err){
+		console.log(err);
+		throw Error("Not Found");
+	}
+}
+
+//POST api/v1/data/reso
+const getResources = async(data) => {
+	try{
+
+		const {userId, resoType, resoId} = data;
+
+		let m = await import('../../json/'+resoType+'/'+resoId+".json", {
+			assert: { type: 'json' }
+		});
+		
+		m = m.default;
+
+		return m;
+
+	}catch(err){
+		console.log(err);
+		throw Error("Not Found");
+	}
+}
+
+//POST api/v1/data/reso/atempt
+const getAttemptData = async(data) => {
+	try{
+
+		const {userId, resoType, resoId} = data;
+
+		let m = await import('../../json/'+resoType+'/' + resoId+".json", {
 			assert: { type: 'json' }
 		});
 
 		m = m.default;
 		
-		if (dataType === "new") { return m; }
-		
-		else if (dataType === "attempt") {
-     
-	      // make a report here why it went wrong ->
-	      const user = await User.findOne({_id : userId});
-	      const userData = user.attemptedQuestions.find((ele) => ele._id === assetId );
+		//finding user with useId
+	    const user = await User.findOne({_id : userId});
+	    const userData = user.attemptedQuestions.find((ele) => ele._id === resoId );
 
-	     	if (userData != null) {
+     	if (userData != null) {
 
-		        const queVarc = userData.queData.que_varc
-		        const queLrdi = userData.queData.que_lrdi
-		        const queQuants = userData.queData.que_quants
+	        const queVarc = userData.queData.que_varc
+	        const queLrdi = userData.queData.que_lrdi
+	        const queQuants = userData.queData.que_quants
+	        
+	        const varcQList = m.que_varc.question_data;
+	        const lrdiQList = m.que_lrdi.question_data;
+	        const quantsQList = m.que_quants.question_data;
+	      
+	        if ( varcQList.length != queVarc.length ) {
+	          throw Error("Question Data Error")
+	        }else{
+	          for (var i = 0; i < queVarc.length; i++){
+	            if ( varcQList[i].questionId === queVarc[i]._id ){
+	              varcQList[i].user_answer = queVarc[i].user_answer
+	            }else{
+	              throw Error("Error Fetching data");
+	            }
+	          }
+	        }
 
-		        console.log(m);
-		        
-		        const varcQList = m.que_varc.question_data;
-		        const lrdiQList = m.que_lrdi.question_data;
-		        const quantsQList = m.que_quants.question_data;
-		      
-		        if ( varcQList.length != queVarc.length ) {
-		          throw Error("Question Data Error")
-		        }else{
-		          for (var i = 0; i < queVarc.length; i++){
-		            if ( varcQList[i].questionId === queVarc[i]._id ){
-		              varcQList[i].user_answer = queVarc[i].user_answer
-		            }else{
-		              throw Error("Error Fetching data");
-		            }
-		          }
-		        }
+	        if ( lrdiQList.length != queLrdi.length ) {
+	          throw Error("Question Data Error")
+	        }else{
+	          for (var i = 0; i < queLrdi.length; i++){
+	            if ( lrdiQList[i].questionId === queLrdi[i]._id ){
+	              lrdiQList[i].user_answer = queLrdi[i].user_answer
+	            }else{
+	              throw Error("Error Fetching data");
+	            }
+	          }
+	        }
 
-		        if ( lrdiQList.length != queLrdi.length ) {
-		          throw Error("Question Data Error")
-		        }else{
-		          for (var i = 0; i < queLrdi.length; i++){
-		            if ( lrdiQList[i].questionId === queLrdi[i]._id ){
-		              lrdiQList[i].user_answer = queLrdi[i].user_answer
-		            }else{
-		              throw Error("Error Fetching data");
-		            }
-		          }
-		        }
+	        if ( quantsQList.length != queQuants.length ) {
+	          throw Error("Question Data Error")
+	        }else{
+	          for (var i = 0; i < queQuants.length; i++){
+	            if ( quantsQList[i].questionId === queQuants[i]._id ){
+	              quantsQList[i].user_answer = queQuants[i].user_answer
+	            }else{
+	              throw Error("Error Fetching data");
+	            }
+	          }
+	        }
 
-		        if ( quantsQList.length != queQuants.length ) {
-		          throw Error("Question Data Error")
-		        }else{
-		          for (var i = 0; i < queQuants.length; i++){
-		            if ( quantsQList[i].questionId === queQuants[i]._id ){
-		              quantsQList[i].user_answer = queQuants[i].user_answer
-		            }else{
-		              throw Error("Error Fetching data");
-		            }
-		          }
-		        }
+	        return m;
+    
+  		} else { throw Error("Attempt Not Available") }
 
-		        return m;
-        
-      		} else { throw Error("Attempt Not Available") }
-
-    	}
-    	else { throw Error("Not Found") }
+    	
 
 	}catch(err){
 		console.log(err);
-		throw err;
+		throw Error("Attempt Not Available");
 	}
 }
 
 
-export { getHomeData, getResource, getAsset, getLearningResource, getPracticeResource, getMockResource};
+export { getHomeData, getResources, getLearningResource, getPracticeResource, getAttemptData, getMainData};
 
 

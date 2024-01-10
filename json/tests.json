@@ -1,0 +1,47 @@
+[
+  {
+    "resourceId": "t1",
+    "resourceName": "Mock Tests",
+    "resourceData": [
+      {
+        "reso_id": "t101",
+        "reso_type": "t1",
+        "reso_name": "Mock 1",
+        "reso_image": "",
+        "isUnlocked" : true,
+        "attempted" : false,
+        "sno": 1
+      }
+    ]
+  },
+  {
+    "resourceId": "t2",
+    "resourceName": "Section Wise",
+    "resourceData": [
+      {
+        "reso_id": "t201",
+        "reso_type": "t2",
+        "reso_name": "Quants - I",
+        "reso_image": "",
+        "isUnlocked" : true,
+        "attempted" : false,
+        "sno": 1
+      }
+    ]
+  },
+  {
+    "resourceId": "t3",
+    "resourceName": "Past Exams",
+    "resourceData": [
+      {
+        "reso_id": "t3001",
+        "reso_type": "t3",
+        "reso_name": "CAT 2023 Slot-I",
+        "reso_image": "",
+        "isUnlocked" : true,
+        "attempted" : false,
+        "sno": 1
+      }
+    ]
+  }
+]

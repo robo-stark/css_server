@@ -1,10 +1,10 @@
 import express from "express";
-import { getHomeData, getResource, getAsset, getLearningResource, getPracticeResource, getMockResource} from './controller.js';
+import { getHomeData, getResources, getAttemptData, getMainData} from './controller.js';
 
 const dataRoutes = express.Router();
 
 
-dataRoutes.get("/", async (req, res) => {
+dataRoutes.get("/home", async (req, res) => {
 	try {
 		let jsonData = await getHomeData(); 
 		res.status(200).json(jsonData); 
@@ -18,18 +18,15 @@ dataRoutes.get("/", async (req, res) => {
 });
 
 
-dataRoutes.get("/reso/:id", async (req, res) => {
+// for fetching home screen data
+//{ "resourceId" : "lr", "userId" : "65781a49940763a83c7727f6" }
+dataRoutes.post('/main', async (req, res) =>{
 	try {
 
-		let id  = req.params.id;
-		
-		if (!id) {
-			throw Error("Empty fields received!");
-		}
-
-		const jsonData = await getResource(id); 
+		const { resourceId, userId } = req.body;
+ 
+		let jsonData = await getMainData({resourceId, userId}); 
 		res.status(200).json(jsonData); 
-
 	}catch(err) {
 		res.status(400).send({
 			  "status": "failed",
@@ -40,7 +37,9 @@ dataRoutes.get("/reso/:id", async (req, res) => {
 });
 
 
-dataRoutes.post("/asset", async (req, res) => {
+//for practice data, learning data and tests data
+//{ "resoId" : "t3001", "resoType" : "t3", "userId" : "65781a49940763a83c7727f6" }
+dataRoutes.post("/reso", async (req, res) => {
 	try {
 
 		let {userId, resoType, resoId} = req.body
@@ -49,7 +48,7 @@ dataRoutes.post("/asset", async (req, res) => {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getAsset({userId, resoType, resoId});
+		const jsonData = await getResources({userId, resoType, resoId});
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
@@ -62,7 +61,31 @@ dataRoutes.post("/asset", async (req, res) => {
 });
 
 
-dataRoutes.post("/lr", async (req, res) => {
+// for fetching tests attempt
+//{ "resoId" : "t3001", "resoType" : "t3", "userId" : "65781a49940763a83c7727f6" }
+dataRoutes.post("/reso/attempt", async (req, res) => {
+	try {
+
+		let { userId, resoType, resoId } = req.body;
+		
+		if (!(resoType && resoId && userId)) {
+			throw Error("Empty fields received!");
+		}
+
+		const jsonData = await getAttemptData({userId, resoType, resoId });
+		res.status(200).json(jsonData); 
+
+	}catch(err) {
+		res.status(400).send({
+			  "status": "failed",
+			  "data": null,
+			  "message": err.message
+		});
+	}
+});
+
+
+/*dataRoutes.post("/lr", async (req, res) => {
 	try {
 
 		let { userId, assetType, assetId } = req.body;
@@ -105,29 +128,7 @@ dataRoutes.post("/pr", async (req, res) => {
 		});
 	}
 });
+*/
 
-
-
-dataRoutes.post("/mr/:dataType", async (req, res) => {
-	try {
-
-		const dataType = req.params.dataType;
-		let { userId, assetType, assetId } = req.body;
-		
-		if (!(assetType && assetId && userId && dataType)) {
-			throw Error("Empty fields received!");
-		}
-
-		const jsonData = await getMockResource({userId, assetType, assetId, dataType});
-		res.status(200).json(jsonData); 
-
-	}catch(err) {
-		res.status(400).send({
-			  "status": "failed",
-			  "data": null,
-			  "message": err.message
-		});
-	}
-});
 
 export default dataRoutes;

@@ -1,19 +1,18 @@
 {
-  "asset_id": "01rp",
+  "asset_id": "r1rp",
   "asset_name": "Ratio & Proportion",
   "teacher": "Ravi Prakash Sir",
   "asset_data": [
     {
-      "id": "01rp1",
+      "id": "r1rp1",
       "sno": 1,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
-
       "name": "Ratio 1",
       "link": "https://www.youtube.com/watch?v=ns_yVxRFmZw"
     },
     {
-      "id": "01rp2",
+      "id": "r1rp2",
       "sno": 2,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
@@ -21,7 +20,7 @@
       "link": "https://www.youtube.com/watch?v=pCBYFUpDduw"
     },
     {
-      "id": "01rp3",
+      "id": "r1rp3",
       "sno": 3,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
@@ -29,7 +28,7 @@
       "link": "https://www.youtube.com/watch?v=eruwLy2vGV4"
     },
     {
-      "id": "01rp4",
+      "id": "r1rp4",
       "sno": 4,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
@@ -37,7 +36,7 @@
       "link": "https://www.youtube.com/watch?v=lyU93VH81s8"
     },
     {
-      "id": "01rp5",
+      "id": "r1rp5",
       "sno": 5,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
@@ -45,7 +44,7 @@
       "link": "https://www.youtube.com/watch?v=a6VLSdHMjEk"
     },
     {
-      "id": "01rp6",
+      "id": "r1rp6",
       "sno": 6,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
@@ -53,7 +52,7 @@
       "link": "https://www.youtube.com/watch?v=dRrLKUiuoHc"
     },
     {
-      "id": "01rp7",
+      "id": "r1rp7",
       "sno": 7,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
@@ -61,7 +60,7 @@
       "link": "https://www.youtube.com/watch?v=nkCvpSojMhI"
     },
     {
-      "id": "01rp8",
+      "id": "r1rp8",
       "sno": 8,
       "image" : "https://ivacusea.sirv.com/cssicons/ic_youtube.png",
       "watched": false,
