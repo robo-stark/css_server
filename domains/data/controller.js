@@ -1,98 +1,9 @@
 import User from '../user/model.js'; 
 
-const getHomeData = async() =>{
-	try{
-		const m = await import('../../json/home.json' , {
-			assert: { type: 'json' }
-		});
-		return m.default;
-	}catch(err){
-		console.log(err);
-		throw Error("Not Found");
-	}
-}
-
-
-const getResource = async(resoId) => {
-	try{
-
-		let m = await import('../../json/reso/' + resoId+".json", {
-			assert: { type: 'json' }
-		});
-		
-		m = m.default;
-		const date = new Date()
-		m.date = date.getTime();
-
-		//console.log(m);
-
-		return m;
-			  
-
-	}catch(err){
-		console.log(err);
-		throw Error("Not Found");
-	}
-}
-	
-
-const getLearningResource = async(data) => {
-	try{
-
-		const {userId, assetType, assetId} = data;
-
-		let m = await import('../../json/lr/'+assetType+'/' + assetId+".json", {
-			assert: { type: 'json' }
-		});
-		
-		return m.default;
-			  
-
-	}catch(err){
-		console.log(err);
-		throw Error("Not Found");
-	}
-}
-
-
-const getPracticeResource = async(data) => {
-	try{
-
-		const {userId, assetType, assetId} = data;
-
-		let m = await import('../../json/pr/'+assetType+'/' + assetId+".json", {
-			assert: { type: 'json' }
-		});
-
-		m = m.default;
-
-		const user = await User.findOne({_id : userId});
-		const userData = user.practiceQuestions.find((ele) => ele._id === assetId );
-		if (userData != null){
-
-			const queList = userData.list
-			
-			queList.forEach((ele) => {
-				for (var i = 0; i < m.asset_data.length; i++){
-					if (m.asset_data[i].questionId === ele._id) {
-						m.asset_data[i].attempted = true;
-						break;
-					}
-				}
-			})
-			return m;
-
-		}else { return m; }
-
-	}catch(err){
-		console.log(err);
-		throw Error("Not Found");
-	}
-}
 
 ///--------------------------All working---------------------------------------//
 
-//POST api/v1/data/main
+//POST api/v1/data/home
 const getMainData = async(data) => {
 	try{
 
@@ -150,8 +61,30 @@ const getResources = async(data) => {
 		
 		m = m.default;
 
-		return m;
+		if (resoType === "q1") {
+			const user = await User.findOne({_id : userId});
+			const userData = user.practiceQuestions.find((ele) => ele._id === resoId );
+			if (userData != null){
 
+			const queList = userData.list
+			
+			queList.forEach((ele) => {
+				for (var i = 0; i < m.asset_data.length; i++){
+					if (m.asset_data[i].questionId === ele._id) {
+						m.asset_data[i].attempted = true;
+						break;
+					}
+				}
+			})
+
+			return m;
+
+		}else {
+		 		return m; 
+			}	
+		}
+		return m;
+		
 	}catch(err){
 		console.log(err);
 		throw Error("Not Found");
@@ -232,7 +165,107 @@ const getAttemptData = async(data) => {
 	}
 }
 
+//Post api/v1/data/asset
+const getLearningResource = async(data) => {
+	try{
 
-export { getHomeData, getResources, getLearningResource, getPracticeResource, getAttemptData, getMainData};
+		const {userId, resoType, assetType, assetId} = data;
+
+		let m = await import('../../json/'+ resoType +'/'+assetType+'/' + assetId+".json", {
+			assert: { type: 'json' }
+		});
+		
+		return m.default;
+			  
+
+	}catch(err){
+		console.log(err);
+		throw Error("Not Found");
+	}
+}
 
 
+
+export { getResources, getLearningResource, getAttemptData, getMainData};
+
+
+
+/*
+
+
+const getPracticeResource = async(data) => {
+	try{
+
+		const {userId, assetType, assetId} = data;
+
+		let m = await import('../../json/pr/'+assetType+'/' + assetId+".json", {
+			assert: { type: 'json' }
+		});
+
+		m = m.default;
+
+		const user = await User.findOne({_id : userId});
+		const userData = user.practiceQuestions.find((ele) => ele._id === assetId );
+		if (userData != null){
+
+			const queList = userData.list
+			
+			queList.forEach((ele) => {
+				for (var i = 0; i < m.asset_data.length; i++){
+					if (m.asset_data[i].questionId === ele._id) {
+						m.asset_data[i].attempted = true;
+						break;
+					}
+				}
+			})
+			return m;
+
+		}else { return m; }
+
+	}catch(err){
+		console.log(err);
+		throw Error("Not Found");
+	}
+}
+
+
+
+const getHomeData = async() =>{
+	try{
+		const m = await import('../../json/home.json' , {
+			assert: { type: 'json' }
+		});
+		return m.default;
+	}catch(err){
+		console.log(err);
+		throw Error("Not Found");
+	}
+}
+
+
+const getResource = async(resoId) => {
+	try{
+
+		let m = await import('../../json/reso/' + resoId+".json", {
+			assert: { type: 'json' }
+		});
+		
+		m = m.default;
+		const date = new Date()
+		m.date = date.getTime();
+
+		//console.log(m);
+
+		return m;
+			  
+
+	}catch(err){
+		console.log(err);
+		throw Error("Not Found");
+	}
+}
+	
+
+
+
+*/

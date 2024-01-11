@@ -1,5 +1,6 @@
 {
-  "reso_id": "t3001",
+  "reso_id": "t1001",
+  "reso_type" : "t1",
   "reso_name": "Cat 2023 Slot-I",
   "que_varc": {
       "total_question": 9,

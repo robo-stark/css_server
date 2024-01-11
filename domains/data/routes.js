@@ -1,26 +1,12 @@
 import express from "express";
-import { getHomeData, getResources, getAttemptData, getMainData} from './controller.js';
+import { getResources, getAttemptData, getMainData, getLearningResource} from './controller.js';
 
 const dataRoutes = express.Router();
 
 
-dataRoutes.get("/", async (req, res) => {
-	try {
-		let jsonData = await getHomeData(); 
-		res.status(200).json(jsonData); 
-	}catch(err) {
-		res.status(400).send({
-			  "status": "failed",
-			  "data": null,
-			  "message": err.message
-		});
-	}
-});
-
-
 // for fetching home screen data
 //{ "resourceId" : "lr", "userId" : "65781a49940763a83c7727f6" }
-dataRoutes.post('/home', async (req, res) =>{
+dataRoutes.post('/', async (req, res) =>{
 	try {
 
 		const { resourceId, userId } = req.body;
@@ -37,8 +23,15 @@ dataRoutes.post('/home', async (req, res) =>{
 });
 
 
+//for cron job to keep server running
+dataRoutes.get('/cron', async(req, res)=>{
+	res.status(200).json({"status" : "ok"});
+})
+
+
+
 //for practice data, learning data and tests data
-//{ "resoId" : "t3001", "resoType" : "t3", "userId" : "65781a49940763a83c7727f6" }
+//{ "resoId" : "t1001", "resoType" : "t1", "userId" : "65781a49940763a83c7727f6" }
 dataRoutes.post("/reso", async (req, res) => {
 	try {
 
@@ -85,16 +78,17 @@ dataRoutes.post("/reso/attempt", async (req, res) => {
 });
 
 
-/*dataRoutes.post("/lr", async (req, res) => {
+//{ "assetId" : "r1av", "assetType" : "arithmetic","resoType" : "r1", "userId" : "65781a49940763a83c7727f6" }
+dataRoutes.post("/asset", async (req, res) => {
 	try {
 
-		let { userId, assetType, assetId } = req.body;
+		let {userId, resoType, assetType, assetId}  = req.body;
 		
-		if (!(assetType && assetId && userId)) {
+		if (!(assetType && assetId && userId && resoType)) {
 			throw Error("Empty fields received!");
 		}
 
-		const jsonData = await getLearningResource({userId, assetType, assetId});
+		const jsonData = await getLearningResource({userId, resoType, assetType, assetId} );
 		res.status(200).json(jsonData); 
 
 	}catch(err) {
@@ -106,7 +100,7 @@ dataRoutes.post("/reso/attempt", async (req, res) => {
 	}
 });
 
-
+/*
 
 dataRoutes.post("/pr", async (req, res) => {
 	try {

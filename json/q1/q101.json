@@ -1,0 +1,48 @@
+{
+  "asset_id": "q101",
+  "asset_name": "Ratio and Proportion",
+  "asset_data": [
+    {
+      "attempted": false,
+      "isMath" : true,
+      "sno": 1,
+      "questionId": "rp01",
+      "question": "\\begin{align*}\nx=&X\\cos\\theta-Y\\sin\\theta \\\\\ny=&X\\sin\\theta+Y\\cos\\theta.\n\\end{align*}",
+      "option_a": "27/8",
+      "option_b": "3/8",
+      "option_c": "3/4",
+      "option_d": "27/4",
+      "answer": 2,
+      "solution": "The mass-energy equivalence is described by the famous equation\n \\[E=mc^2 \\] \n discovered in 1905 by Albert Einstein. \nIn natural units ($c$ = 1), the formula expresses the identity",
+      "questionType": "mcq"
+    },
+    {
+      "attempted": false,
+      "sno": 2,
+      "isMath" : true,
+      "questionId": "rp02",
+      "question": "We can use the fundamental theorem of calculus to say that\n $$\\int_2^3 x^2 \\, dx=\\frac{3^3}{3}-\\frac{2^3}{3}=\\frac{19}{3}$$. Also note that $$\\displaystyle \\int_2^3 x^2 \\, dx=\\frac{3^3}{3}-\\frac{2^3}{3}=\\frac{19}{3}$$. ",
+      "option_a": "1 : 2",
+      "option_b": "2 : 1",
+      "option_c": "3 : 1",
+      "option_d": "None of these",
+      "answer": 2,
+      "solution": "Let a – b = x, b – c = 2x and c – d = 3x <br> ∴ c = 3x + d <br> b = 2x + c = 5x + d <br> a = x + b = 6x + d <br>∴ $\\frac {a+d}{c} = \\frac {6x+d+d}{3x+d} = \\frac 21$",
+      "questionType": "mcq"
+    },
+    {
+      "attempted": false,
+      "isMath" : true,
+      "sno": 3,
+      "questionId": "rp03",
+      "question": "If $$\\frac ab = \\frac 23 , \\frac bc = \\frac 35 and \\frac cd = \\frac 56$$ then what is the value of $$\\frac{3a+2b+4c+d}{3d+4c}$$ ?",
+      "option_a": "19/6",
+      "option_b": 38,
+      "option_c": 1,
+      "option_d": 2,
+      "answer": 3,
+      "solution": "$\\frac a2 = \\frac b3,\\frac b3 = \\frac c5,\\frac c5 = \\frac d6$ <br> ∴ $\\frac a2 = \\frac b3 = \\frac c5 = \\frac d6$ = k (say) <br> ∴ $\\frac{3a+2b+4c+d}{3d+4c} = \\frac{3(2k)+2(3k)+4(5k)+6k}{3(6k)+4(5k)} = \\frac{38}{38} = 1 $",
+      "questionType": "mcq"
+    }
+  ]
+}
