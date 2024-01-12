@@ -9,7 +9,8 @@
         "reso_name": "Arithmetic",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_arithmetic.png",
         "isUnlocked" : true,
-        "sno": 1
+        "sno": 1,
+        "count": 4
       },
       {
         "reso_id": "r102",
@@ -17,7 +18,8 @@
         "reso_name": "Algebra",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_algebra.png",
         "isUnlocked" : true,
-        "sno": 2
+        "sno": 2,
+        "count": 1
       },
       {
         "reso_id": "r103",
@@ -25,7 +27,8 @@
         "reso_name": "Modern Math",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_modern.png",
         "isUnlocked" : true,
-        "sno": 3
+        "sno": 3,
+        "count": 1
       },
       {
         "reso_id": "r104",
@@ -33,7 +36,8 @@
         "reso_name": "Geometry",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_geo.png",
         "isUnlocked" : true,
-        "sno": 4
+        "sno": 4,
+        "count": 1
       },
       {
         "reso_id": "r105",
@@ -41,7 +45,8 @@
         "reso_name": "Numbers",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_numbers.png",
         "isUnlocked" : true,
-        "sno": 5
+        "sno": 5,
+        "count": 1
       }
     ]
   },
