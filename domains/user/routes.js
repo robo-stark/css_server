@@ -4,7 +4,7 @@ import { createNewUser , authenticateUser, updatePraticeData, updateQuestionAtte
 import verifyToken from "../../middleware/auth.js";
 
 
-
+//{ "assetId" : "q102", "questionId" : "rp03", "userId" : "657a8ed955dc7721f3cc1a55" }
 userRoutes.post("/update/practice", async (req, res) => {
 	try {
 
@@ -27,17 +27,17 @@ userRoutes.post("/update/practice", async (req, res) => {
 	}
 });
 
-
+//inside fs.json
 userRoutes.post("/update/attempt", async (req, res) => {
 	try {
 
-		let { userId, assetId, questionData, resoId } = req.body;
+		let { userId, questionData, resoId, resoType} = req.body;
 	
-		if (!(userId && questionData && assetId && resoId)) {
+		if (!(userId && questionData && resoId && resoType)) {
 			throw Error("Empty fields received!");
 		}
 
-		const updateResult = await updateQuestionAttemptData({userId, assetId, questionData, resoId});
+		const updateResult = await updateQuestionAttemptData( { userId, questionData, resoId, resoType} );
 		res.status(200).json(updateResult);
 	
 

@@ -30,7 +30,7 @@ dataRoutes.get('/cron', async(req, res)=>{
 
 
 
-//for practice data, learning data and tests data
+//for practice data, tests data & learning data
 //{ "resoId" : "t1001", "resoType" : "t1", "userId" : "65781a49940763a83c7727f6" }
 dataRoutes.post("/reso", async (req, res) => {
 	try {

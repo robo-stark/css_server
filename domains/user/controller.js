@@ -104,19 +104,19 @@ const updatePassword = async (data) => {
 const updateMockAttempt = async (data) => {
 	try{
 
-		const {userId, resoId, assetId} = data;
+		const {userId, resoId, resoType} = data;
 
-		const exists = await User.countDocuments({_id : userId,"attemptedMocks._id" : resoId})
+		const exists = await User.countDocuments({_id : userId,"attemptedMocks._id" : resoType})
 		if (exists) {
 			await User.updateOne({_id : userId}, 
-				{ $addToSet : { "attemptedMocks.$[e1].list" : {_id : assetId } } },
-				{arrayFilters : [{"e1._id" : resoId}]} )
+				{ $addToSet : { "attemptedMocks.$[e1].list" : {_id : resoId } } },
+				{arrayFilters : [{"e1._id" : resoType}]} )
 		}else{
 			await User.updateOne(
 				{ _id : userId },
 				{ $addToSet : {"attemptedMocks" : [{
-						_id : resoId,
-						list : { _id : assetId }
+						_id : resoType,
+						list : { _id : resoId }
 					}]
 				} },
 			)
@@ -169,15 +169,15 @@ const updatePraticeData = async (data) => {
 const updateQuestionAttemptData = async (data) => {
 	try{
 
-		const {userId, assetId, questionData, resoId} = data;
+		const { userId, questionData, resoId, resoType}  = data;
 
 	
-		const exists = await User.countDocuments({_id : userId, "attemptedQuestions._id" : assetId})
+		const exists = await User.countDocuments({_id : userId, "attemptedQuestions._id" : resoId})
 		if (exists) {
 			
 			await User.updateOne({_id : userId}, 
 				{ $set : { "attemptedQuestions.$[e1].queData" : questionData } },
-				{arrayFilters : [{"e1._id" : assetId}]} )
+				{arrayFilters : [{"e1._id" : resoId}]} )
 
 		}else{
 			
@@ -185,14 +185,14 @@ const updateQuestionAttemptData = async (data) => {
 				{ _id : userId },
 				{ $addToSet : {
 					"attemptedQuestions" : [{
-						_id : assetId,
+						_id : resoId,
 						queData : questionData
 					}]
 				} },
 			)
 		}
 
-		await updateMockAttempt({userId, resoId, assetId})
+		await updateMockAttempt({userId, resoId, resoType})
 		
 		return {
 			 "status": "success",
