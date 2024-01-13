@@ -8,6 +8,7 @@
         "reso_type": "r1",
         "reso_name": "Arithmetic",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_arithmetic.png",
+        "reso_color" : "#e9d7ff",
         "isUnlocked" : true,
         "sno": 1,
         "count": 4
@@ -17,6 +18,7 @@
         "reso_type": "r1",
         "reso_name": "Algebra",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_algebra.png",
+        "reso_color" : "#ecfaef",
         "isUnlocked" : true,
         "sno": 2,
         "count": 1
@@ -26,6 +28,7 @@
         "reso_type": "r1",
         "reso_name": "Modern Math",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_modern.png",
+        "reso_color" : "#c5f0ff",
         "isUnlocked" : true,
         "sno": 3,
         "count": 1
@@ -35,6 +38,7 @@
         "reso_type": "r1",
         "reso_name": "Geometry",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_geo.png",
+        "reso_color" : "#fff1c5",
         "isUnlocked" : true,
         "sno": 4,
         "count": 1
@@ -44,6 +48,7 @@
         "reso_type": "r1",
         "reso_name": "Numbers",
         "reso_image": "https://ivacusea.sirv.com/cssicons/ic_numbers.png",
+        "reso_color" : "#fce8ee",
         "isUnlocked" : true,
         "sno": 5,
         "count": 1
