@@ -9,7 +9,8 @@
         "reso_name": "Ratio and Proportion",
         "reso_image": "",
         "isUnlocked": true,
-        "sno": 1
+        "sno": 1,
+        "count" : 2
       },
       {
         "reso_id": "q102",
@@ -17,7 +18,8 @@
         "reso_name": "Profit, Loss & Discount",
         "reso_image": "",
         "isUnlocked": true,
-        "sno": 1
+        "sno": 1,
+        "count" : 2
       },
       {
         "reso_id": "q103",
@@ -25,7 +27,8 @@
         "reso_name": "Mixtures & Alligations",
         "reso_image": "",
         "isUnlocked": true,
-        "sno": 1
+        "sno": 1,
+        "count" : 2
       }
     ]
   }
