@@ -1,5 +1,6 @@
 [
   {
+    "resourceDate" : 0,
     "resourceId": "r1",
     "resourceName": "Quantitative Aptitude",
     "resourceData": [
@@ -56,6 +57,7 @@
     ]
   },
   {
+    "resourceDate" : 0,
     "resourceId": "r2",
     "resourceName": "Logical Reasoning &/nData Interpretation",
     "resourceData": []

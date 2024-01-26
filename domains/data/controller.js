@@ -22,6 +22,12 @@ const getMainData = async(data) => {
 		
 		m = m.default;
 
+		//adding current fetch date to json
+		const date = new Date()
+		m[0].resourceDate = date.getTime();
+
+		console.log(m);
+
 		if (resourceId === "tr") {
 			const user = await User.findOne({_id : userId});
 			const userData = user.attemptedMocks.find((ele) => ele._id === resourceId );
