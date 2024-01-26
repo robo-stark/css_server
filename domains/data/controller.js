@@ -1,8 +1,6 @@
 import User from '../user/model.js'; 
 
 
-///--------------------------All working---------------------------------------//
-
 //POST api/v1/data/home
 const getMainData = async(data) => {
 	try{
@@ -193,6 +191,18 @@ const getLearningResource = async(data) => {
 
 
 export { getResources, getLearningResource, getAttemptData, getMainData};
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
