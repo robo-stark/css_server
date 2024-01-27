@@ -14,7 +14,7 @@
     "option_c": "3/4",
     "option_d": "27/4",
     "answer": 1,
-    "solution": "$$ \\frac ab = \\frac 13, \\frac bc = \\frac 21 $$\\n\\n⇒ a : b : c = 2 : 6 : 3 \\n\\n similarly a : b : c : d : e : f = 2 : 6 : 3 : 6 : 2 : 8\\n\\n∴ $$\\frac {abc}{def} = \\frac {2 \\times 6 \\times 3 }{ 6 \\times 2 \\times 8 } = \\frac 38 $$",
+    "solution": "\\begin{equation}\\text{what is it that is required and what not} \\\\ R(t)= A \\left(\\frac{E_0}{\\rho_0}\\right)^{1/5}t^{2/5} \\\\ \\text{but still who is God ? }\\end{equation}",
     "questionType": "mcq"
   },
   {
